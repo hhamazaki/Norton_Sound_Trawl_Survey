@@ -160,49 +160,24 @@ nssp <- nssp[which(is.na(nssp$Haul_rate)),]
 nssp.w <- dcast(nssp,Year+Agent+Haul~Spcode)
 nssp.w[nssp.w$Year==1996,1:5]
 
-
-
+#-------------------------------------------------------------------------------
+# Calculate CPUE Index:  geometric mean CPUE*(proportion of stations the species is present)
+#-------------------------------------------------------------------------------
+ # Calculate mean log CPUE for each species 
 nssp.i <- aggregate(log(CPUE) ~ Year+Agent+Spcode,FUN=mean,data=nssp[which(nssp$CPUE>0),])
+# Find the number of stations with each species present 
 nssp.n <- aggregate(CPUE ~ Year+Agent+Spcode,FUN=length,data=nssp[which(nssp$CPUE>0),])
 nssp.s <- merge(nssp.i,nssp.n,by=c('Year','Agent','Spcode'))
+# Find the number of stations with Trawled  
 nssp.st <-aggregate(Haul~Agent+Year,FUN=length,data=nssp.w)
+# Combined the data and rename 
 nssp.s <- merge(nssp.s,nssp.st,by=c('Year','Agent'))
-names(nssp.s)[4:6] <- c('l.cpue','ns','nt')
-nssp.s$I.CPUE <- with(nssp.s,exp(l.cpue)*ns/nt)
-
-
+names(nssp.s)[4:6] <- c('ml.cpue','ns','nt')
+# I.CPUE is geometric mean CPUE Index. 
+nssp.s$I.CPUE <- with(nssp.s,exp(ml.cpue)*ns/nt)
 #Add spcode 
 spn  <- read.csv(paste0(data_dir,data_file4),na='',header=TRUE)
-nssp.s <- merge(nssp,spn,by=c('Spcode'))
-taxon.w <- dcast(taxon, Year~Taxon2_u, values.var='CPUE')   
-taxon.w[is.na(taxon.w)] <- 0
-sp <- unique(taxon$Taxon2_u)
+nssp.s <- merge(nssp.s,spn,by=c('Spcode'))
 
-windows(record=TRUE)
-
-barplot(t(taxon.w[,-1]),names.arg = taxon.w$Year, col =rainbow(16))
-legend('topleft',fill=rainbow(16),legend=names(taxon.w)[-1])
-
-par(mfrow=c(4,5), mar=c(2,2,2,1),oma = c(3,3,3,3),cex=0.8,mgp = c(3,.3,0))
-for (i in 1:20){
-barplot(t(taxon.w[,i+1]),names.arg = taxon.w$Year, col =2,main=names(taxon.w)[i+1])
-#legend('topleft',fill=rainbow(16),legend=names(taxon.w)[-1])
-}
-
-
-
-taxon.wv <- dcast(taxon[taxon$Taxon3=='vertebrate', ],Year~Taxon2, values.var='I.CPUE')   
-taxon.wv[is.na(taxon.wv)] <- 0
-sp <- unique(taxon[taxon$Taxon3=='vertebrate','Taxon2'])
-
-barplot(t(taxon.wv[,-1]),names.arg = taxon.wv$Year, col =rainbow(9))
-legend('topleft',fill=rainbow(9),legend=names(taxon.wv)[-1])
-
-taxon.wv <- dcast(taxon[taxon$Taxon3=='Invertebrate', ],Year~Taxon2, values.var='I.CPUE')   
-taxon.wv[is.na(taxon.wv)] <- 0
-sp <- unique(taxon[taxon$Taxon3=='Invertebrate','Taxon2'])
-
-barplot(t(taxon.wv[,-1]),names.arg = taxon.wv$Year, col =rainbow(9))
-legend('topleft',fill=rainbow(9),legend=names(taxon.wv)[-1])
-
+write.csv(nssp.s, paste0(data_dir,'CPUE_Index.csv'))
 

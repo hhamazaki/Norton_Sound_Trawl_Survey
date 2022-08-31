@@ -1,0 +1,464 @@
+Code,Name,Cname
+0,unknown,unknown
+1,fish eggs unident.,fish egg
+2,Kelp,Kelp
+471,Bathyraja parmifera,Alaska Skate
+10001,Pleuronectiformes,flatfish unidentNone (prevNone flounder unidentNone)
+10115,Reinhardtius hippoglossoides,Greenland turbot
+10120,Hippoglossus stenolepis,Pacific halibut
+10130,Hippoglossoides elassodon,flathead sole
+10140,Hippoglossoides robustus,Bering flounder
+10155,Liopsetta glacialis (=Pleuronectes glacialis),Arctic flounder
+10210,Limanda aspera,yellowfin sole
+10211,Limanda proboscidea (=Pleuronectes proboscidea),longhead dab
+10220,Platichthys stellatus,starry flounder
+10221,Platichthys stellatus X Pleuronectes quadrituberculatus,Hybrid starry flounder X Alaska plaice
+10240,Clidoderma,roughscale sole
+10250,Psettichthys melanostictus,sand sole
+10260,Lepidopsetta sp. (= Pleuronectes in part),rock sole spNone
+10261,Lepidopsetta peracuata (=Pleuronectes perarcuatus),northern rock sole
+10262,Lepidopsetta bilineata (prev. Pleuronectes bilineatus),southern rock sole
+10270,Isopsetta isolepis (=Pleuronectes isolepis),butter sole
+10280,Pleuronichthys decurrens,curlfin sole
+10281,Pleuronichthys verticalis,hornyhead turbot
+10285,Pleuronectes quadrituberculatus,Alaska plaice
+10290,Pleuronichthys coenosus,C-O sole
+10291,Pleuronichthys sp.,None
+10295,Pleuronichthys ritteri,Pleuronichthys ritteri
+10400,Symphurus atricauda,California tonguefish
+20000,Agonidae,poacher unidentNone
+20001,Pallasina barbata,tubenose poacher
+20006,Sarritor frenatus,sawback poacher
+20040,Podothecus acipenserinus (=Agonus acipenserinus),sturgeon poacher
+20041,Podothecus veternus,Veteran poacher
+20051,Aspidophoroides olriki,Arctic alligatorfish
+20060,Occella verrucosa,warty poacher
+20061,Occella dodecaedron,Bering poacher
+20202,Ammodytes hexapterus,Pacific sand lance
+20322,Anarhichas orientalis,Bering wolffish
+21110,Clupea pallasi  (=Clupea harengus pallasi),Pacific herring
+21300,Cottidae,sculpin unidentNone
+21313,Gymnocanthus sp.,None
+21314,Gymnocanthus pistilliger,threaded sculpin
+21315,Gymnocanthus tricuspis,Arctic staghorn sculpin
+21331,Artediellus sp.,None
+21332,Artediellus miacanthus,bride sculpin  (Northern hookear sculpin)
+21334,Artediellus scaber,hamecon
+21335,Artediellus uncinatus,Arctic hookear sculpin
+21339,Malacocottus sp.,None
+21341,Malacocottus zonurus,darkfin sculpin
+21342,Hemilepidotus sp.,Irish lord
+21346,Hemilepidotus hemilepidotus,red Irish lord
+21347,Hemilepidotus jordani,yellow Irish lord
+21348,Hemilepidotus papilio  (=Melletes papilio),butterfly sculpin
+21350,Triglops sp.,None
+21353,Triglops metopias,crescent-tail sculpin
+21355,Triglops pingeli,ribbed sculpin
+21356,Triglops macellus,roughspine sculpin
+21360,Microcottus sellaris,brightbelly sculpin
+21368,Myoxocephalus verrucosus(=M. groenlandicus=M. scorpius),warty sculpin  (=shorthorned sculpin)
+21370,Myoxocephalus polyacanthocephalus,great sculpin
+21371,Myoxocephalus jaok,plain sculpin
+21373,Myoxocephalus stelleri (=M. stelleri mednius),frog sculpin
+21375,Myoxocephalus sp.,None
+21376,Megalocottus platycephalus,belligerent sculpin
+21377,Myoxocephalus quadricornis,fourhorn sculpin
+21378,Myoxocephalus scorpioides,Arctic sculpin
+21380,Leptocottus armatus,Pacific staghorn sculpin
+21384,Enophrys sp.,None
+21387,Enophrys lucasi,leister sculpin
+21388,Enophrys diceraus  (=Enophrys claviger),antlered sculpin
+21390,Dasycottus setiger,spinyhead sculpin
+21393,Psychrolutes sp.,None
+21394,Psychrolutes paradoxus,tadpole sculpin
+21397,Blepsias bilobus,crested sculpin
+21405,Nautichthys pribilovius,eyeshade sculpin
+21423,Eurymen gyrinus,smoothcheek sculpin
+21438,Icelus spiniger,thorny sculpin
+21446,Icelus sp.,None
+21720,Gadus macrocephalus,Pacific cod
+21725,Boreogadus saida,Arctic cod
+21735,Eleginus gracilis,saffron cod
+21740,Theragra chalcogramma,walleye pollock
+21753,Pungitius pungitius,ninespine stickleback
+21900,Hexagrammidae,greenling unidentNone
+21910,Ophiodon elongatus,lingcod
+21915,Oxylebius pictus,painted greenling
+21921,Pleurogrammus monopterygius,Atka mackerel
+21930,Hexagrammos sp.,None
+21931,Hexagrammos octogrammus,masked greenling
+21932,Hexagrammos stelleri,whitespotted greenling
+21934,Hexagrammos lagocephalus,rock greenling
+21935,Hexagrammos decagrammus,kelp greenling
+21936,Zaniolepis latipinnis,longspine combfish
+21937,Icosteus aenigmaticus,ragfish
+22178,Eumicrotremus orbis,Pacific spiny lumpsucker
+22200,Cyclopteridae (Liparidinae),snailfish unidentNone
+22201,Liparis sp.,Snailfish unidentified
+22205,Liparis gibbus (=Liparis cyclostigma),dusky snailfish (prevNone variegated snailfish)
+22213,Liparis rutteri,ringtail snailfish
+23041,Mallotus villosus,capelin
+23055,Osmerus mordax,rainbow smelt
+23201,Salmonidae,salmon and trouts unidentNone(prevNone salmon unidentNone)
+23220,Oncorhynchus tshawytscha,chinook salmon
+23225,Oncorhynchus kisutch,coho salmon
+23235,Oncorhynchus keta,chum salmon
+23240,Oncorhynchus nerka,sockeye salmon
+23801,Lumpenus sp.,None
+23803,Eumesogrammus praecisus,fourline snakeblenny
+23804,Stichaeus punctatus,Arctic shanny
+23805,Lumpenus maculatus  (=Leptoclinus maculatus),daubed shanny
+23806,Lumpenus medius,stout eelblenny
+23807,Lumpenus fabricii,slender eelblenny
+23808,Lumpenus sagitta,snake prickleback
+23809,Acantholumpenus mackayi,pighead prickleback
+23841,Chirolophis decoratus,decorated warbonnet
+23843,Chirolophis snyderi,bearded warbonnet
+24100,Zoarcidae,eelpout unidentNone
+24180,Lycodes sp.,None
+24184,Lycodes raridens,marbled eelpout  (prevNone sparse toothed lycod)
+24185,Lycodes palearis,wattled eelpout
+24187,Lycodes concolor (=Lycodes soldatovi),ebony eelpout  (prevNone marbled eelpout)
+24188,Lycodes polaris,Canadian eelpout
+24189,Lycodes turneri,polar eelpout
+24191,Lycodes brevipes,shortfin eelpout
+24192,Gymnelus viridis,fish doctor
+40001,Cnideria (phylum)  (Coelenterata),coelenterate unidentNone
+40010,Hydrozoa (class),None
+40011,Hydroid sp.,Hydroid unidentNone
+40020,Hydractinia sp.,None
+40050,Sertularia robusta,None
+40500,Scyphozoa (class),jellyfish unidentNone
+40501,Chrysaora sp.,chrysaora jellyfish
+41201,Gersemia sp.  (=Eunephthya sp.),sea raspberry
+41221,Gersemia rubiformis  (=Eunephthya rubiformis),None
+41500,Gorgonacea (order),coral unidentNone
+41520,Primona sp. ,None
+41530,Primnoa willeyi,None
+41540,Antipathes sp.,None
+41550,Parantipathes sp.,None
+41570,Swiftia sp.,None
+41580,Paragorgia sp.,None
+41582,Paragorgia arborea,None
+41600,Callogorgia sp.,None
+41700,Calcigorgia sp.,None
+42001,Virgularia sp.,smoothstem seawhip
+42003,Virgularidae,sea whip unidentNone
+42004,Stylatula sp.,slender seawhip
+42005,Stylatula gracile,roughstem seawhip
+42008,Pavonaria sp.,None
+42010,Pavonaria finmarchica,None
+42015,Umbellula sp.,None
+42017,Ptilosarcus gurneyi (=Leioptilus gurneyi),None
+43000,Actiniaria (order),sea anemone unidentNone
+43010,Metridium sp.,None
+43020,Metridium senile,None
+43040,Tealia sp.,Sea anemone
+43082,Cribrinopsis fernaldi,None
+44000,Scleractinia unident.,stony coral unidentNone
+45000,Ctenophora (phylum),comb jelly unidentNone
+50000,Polychaeta (class),polychaete worm unidentNone
+50010,tube worm unident.,None
+54030,Cheilonereis cyclurus,None
+56300,Polynoidae,scale worm unidentNone
+56310,Eunoe sp.,None
+56311,Eunoe nodosa,giant scale worm
+56312,Eunoe depressa,depressed scale worm
+57000,Sabellidae,sabellid unident.
+59111,Carcinobdella cyclostomum,striped sea leech
+60100,Amphipoda,amphipod unidentNone
+62000,Isopoda (order),isopod unidentNone
+62020,Saduria entomon,None
+63500,Euphausiacea (order),euphausiid unident.
+64500,Copepoda (class),copepod unident.
+65000,Cirripedia (class),None
+65100,Thoracica (order),barnacle unidentNone
+65201,Balanus sp.,None
+65203,Balanus evermanni,giant barnacle
+65204,Balanus hesperius,crab barnacle
+65205,Balanus rostratus,beaked barnacle
+66000,Caridea,shrimp unidentNone
+66020,Pandalus sp.,None
+66045,Pandalus goniurus,humpy shrimp
+66050,Pandalus hypsinotus,coonstripe shrimp
+66150,Hippolytidae (family),hippolytid shrimp unidentNone
+66170,Eualus sp.,None
+66175,Eualus gaimardii belcheri,None
+66200,Lebbeus sp.,None
+66203,Lebbeus groenlandicus,None
+66204,Lebbeus polaris,Polar lebbeid
+66500,Crangonidae (family),crangonid shrimp unidentNone
+66502,Crangon sp.,None
+66515,Crangon communis,twospine crangon
+66530,Crangon dalli,ridged crangon
+66548,Crangon septemspinosa,sevenspine bay shrimp
+66570,Argis sp.,None
+66580,Argis dentata,Arctic argid
+66600,Sclerocrangon sp.,None
+66601,Sclerocrangon boreas,sculptured shrimp
+66602,Rhynocrangon alata,saddleback shrimp
+66611,Argis lar,kuro argid
+66612,Argis crassa,rough argid
+66614,Argis ovifer,split-eye argid
+68000,Anormura,Unidentified crab
+68510,Oregonia gracilis,graceful decorator crab
+68560,Chionoecetes bairdi,Tanner crab(bairdi))
+68577,Hyas coarctatus  (=Hyas coarctatus aleuticus),circumboreal toad crab (=hyas crab (round spined))
+68578,Hyas lyratus,Pacific lyre crab
+68580,Chionoecetes opilio,narrow snow crab(=tanner crab(opilio))
+68590,Chionoecetes hybrid,tanner crab (hybrid)
+68781,Telmessus cheiragonus,helmet crab
+69000,Anomura,None
+69010,Paguridae,hermit crab unident
+69035,Pagurus sp.,None
+69042,Pagurus brandti,sponge hermit
+69060,Pagurus aleuticus,Aleutian hermit
+69061,Labidochirus splendescens (=Pagurus splendescens),splendid hermit
+69065,Pagurus alaskensis(=69090 Pagurus ochotensis),None
+69070,Pagurus confragosus,Pagurus confragosus
+69080,Pagurus cornutus,None
+69082,Pagurus dalli,whiteknee hermit
+69085,Pagurus kennerlyi,bluespine hermit
+69086,Pagurus trigonocheirus,fuzzy hermit crab
+69090,Pagurus ochotensis,Alaskan hermit
+69095,Pagurus rathbuni,longfinger hermit
+69120,Pagurus capillatus,hairy hermit crab
+69250,Lithodidae,stone crab unident
+69316,Hapalogaster grebnitzkii,Soft crab
+69322,Paralithodes camtschaticus,red king crab
+69323,Paralithodes platypus,blue king crab
+70000,Mollusca ,mollusk unident.
+70100,Chitonidea,chiton unidentNone
+70108,Cryptochiton stelleri,Gumboot chiton
+70115,Amicula vestita,None
+71001,Gastropod sp. Eggs,Snail eggs
+71004,Neptunea sp. eggs,Snail eggs
+71010,Nudibranchia,nudibranch unidentNone
+71030,Tritonia diomedea,Giant orange nudibranch
+71250,Nudibranchia,Dorid nudibranch unidentified
+71500,Gastropod unident.,snail unidentNone
+71504,Asterophila japonica,None
+71525,Natica sp.,None
+71530,Natica clausa,Arctic moonsnail
+71535,Natica aleutica,None
+71537,Natica russa,rusty moonsnail
+71575,Polinices sp.,None
+71580,Polinices pallidus,pale moonsnail
+71585,Onchidiopsis glacialis,icy lamellaria
+71586,Capulacmaea commoda (=Piliscus commoda),widemouth lamellaria
+71634,Tachyrhynchus erosus,eroded turretsnail
+71640,Crepidula sp.,slipper shell
+71681,Crepidula grandis,great slippersnail
+71710,Colus sp.,None
+71722,Colus hypolispus,oblique whelk
+71723,Colus ombronius,shady whelk
+71726,Colus spitzbergensis,thick-ribbed whelk
+71750,Volutopsius sp. (=Pyrulofusus sp.),None
+71753,Pyrulofusus deformis,warped whelk
+71755,Volutopsius harpa,left-hand whelk
+71756,Volutopsius fragilis,fragile whelk
+71759,Volutopsius filosus,threaded whelk
+71760,Volutopsius castaneus,volute whelk
+71763,Volutopsius stefanssoni,shouldered whelk
+71764,Volutopsius middendorffii,tulip whelk
+71772,Beringius beringii,None
+71774,Beringius stimpsoni,None
+71800,Neptunea sp.,None
+71835,Neptunea borealis,None
+71870,Neptunea lyrata,lyre whelk
+71882,Neptunea ventricosa,fat whelk
+71884,Neptunea heros,Northern Neptune
+71891,Plicifusus kroyeri,None
+71894,Plicifusus verkruzeni,None
+71895,Volutopsius callorhinus,None
+71910,Liomesus sp.,None
+71911,Liomesus ooides,egg whelk
+72019,Antiplanes sp.,None
+72022,Antiplanes piona,None
+72059,Aforia sp.  (=Leucosyrinx sp.),None
+72060,Aforia circinata,None
+72063,Oenopota sp.,None
+72100,Oenopota harpa,None
+72103,Oenopota harpa,None
+72181,Obesotoma simplex,None
+72300,Trichotropidae,None
+72303,Trichotropis insignis,gray hairysnail
+72305,Trichotropis bicarinata,two-keel hairysnail
+72370,Trichotropis kroyeri,None
+72403,Boreotrophon muriciformis (=Trophon=Trophonopsis dalli),None
+72406,Boreotrophon clathratus (=Trophon clathratus),clathrate trophon
+72420,Boreotrophon sp.,None
+72510,trochid unident.,trochid unidentNone
+72533,Margarites giganteus,giant margarite
+72540,Solariella sp.,None
+72541,Solariella obscura,None
+72543,Solariella varicosa,None
+72740,Buccinum sp.,None
+72743,Buccinum angulosum,None
+72744,Buccinum fringillum,finch whelk
+72752,Buccinum scalariforme,ladder whelk (prevNone silky whelk)
+72755,Buccinum polare,polar whelk
+72756,Buccinum solenum,None
+72758,Buccinum glaciale,glacial whelk
+72759,Buccinum tenellum,None
+72795,Volutomitra alaskana,None
+72800,Velutina undata,wavy lamellaria
+72802,Velutina plicatilis,oblique lamellaria
+72805,Velutina velutina,smooth lamellaria
+73185,Admete laevior,None
+73351,Cylichna alba,white chalice-bubble
+74000,Pelecypoda,bivalve unidentNone
+74050,Mytilidae,mussel unidentNone
+74080,Mytilus edulis,blue mussel (prevNone bay mussel)
+74311,Hiatella arctica,Arctic hiatella
+74414,Yoldia sp.,Yoldia unidentified
+74417,Yoldia myalis  (prev. file yoldia),None
+74425,Yoldiella sp.,None
+74435,Nuculana sp.,None
+74560,Musculus sp.,None
+74561,Musculus niger,black mussel
+74562,Musculus discors,discordant mussel
+74639,Astarte crenata,crenulate astarte
+74640,Astarte sp.,None
+74641,Tridonta borealis (=Astarte borealis),boreal tridonta
+74654,Crassicardia crassidens (=cyclocardia crassidens),thick carditid
+74655,Cyclocardia crebricostata,many-rib cyclocardia
+74980,Clinocardium sp.,cockle unidentNone
+74981,Cardiidae,cockle unidentNone
+74982,Clinocardium nuttallii,Nuttall cockle
+74983,Clinocardium ciliatum,hairy cockle
+74985,Clinocardium californiense,California cockle
+75102,Tresus nuttallii,Pacific gaper  (prevNone horse neck clam)
+75110,Mactromeris sp. (=Spisula sp.),None
+75111,Mactromeris polynyma (=Spisula polynyma),Arctic surfclam (prevNone  Alaska surf clam)
+75240,Macoma sp.,None
+75241,Macoma nasuta,bent-nose macoma (prevNone common macoma)
+75242,Macoma calcarea,chalky macoma
+75247,Macoma brota,heavy macoma
+75267,Siliqua alta,Alaska razor   (prevNone northern razor clam)
+75284,Serripes sp.,None
+75285,Serripes groenlandicus,Greenland cockle
+75286,Serripes laperousii,broad cockle
+75330,Mya sp.,None
+75332,Mya arenaria,softshell  (prevNone soft shelled clam)
+75333,Mya truncata,Macoma clam
+75335,Mya pseudoarenaria,false softshell
+75336,Mya elegans,elegant soft shell
+75372,Xylophaga californica,None
+75381,Bankia sp.,Shipworm unidentNone
+75382,Bankia setacea,feathery shipworm
+75410,Lyonsia arenosa,sandy lyonsia
+75551,Cardiomya sp.,None
+75600,Pododesmus macroschisma,Alaska falsejingle  (prevNone rock jingle)
+75609,Anomia sp.,None
+75610,Anomiidae,falsejingles unidentNone(prevNonerock jingles unidentNone)
+77000,Scaphopoda,scaphopod unidentNone
+77011,Dentalium sp.,None
+77012,Rhabdus dalli (=Dentalium dalli),Dall tuskshell
+78000,Cepalopoda,cephalopod unidentNone
+78001,Sepiida,cuttlefish unidentNone
+78010,Octopodidae,octopus unidentNone
+78011,Octopodidae,pelagic octopus unidentNone
+78012,Octopus leioderma,smoothskin octopus
+78030,Opisthoteuthis californiana,flapjack devilfish
+78403,Octopus dofleini,giant octopus
+78452,Benthoctopus sp.,None
+78502,Vampyroteuthis infernalis,None
+79000,Teuthida,squid unidentNone
+79001,Taningia danae,rhomboid squid
+79020,Rossia pacifica,eastern Pacific bobtail
+79120,Loligo opalescens,Loligo opalescens
+79200,Gonatus sp.,None
+79201,Gonatus onyx,clawed armhook squid
+79202,Gonatus berry,Berry armhook squid
+79203,Gonatus pyros,None
+79204,Gonatus californiensis,None
+79210,Berryteuthis magister,magistrate armhook squid  (prevNone red squid)
+79250,Gonatopsis sp.,None
+79252,Gonatopsis borealis,None
+79254,Gonatopsis makko,None
+79260,Ommastrephes bartrami,flying squid
+79302,Moroteuthis robusta,robust clubhook squid
+79310,Onychoteuthidae,None
+79311,Onychoteuthis banksi,None
+79312,Onychoteuthis borealijaponicus,boreal clubhook squid
+79351,Abraliopsis sp.,None
+79352,Abraliopsis felis,None
+79404,Chiroteuthis calyx,None
+79442,Taonius pavo,None
+79504,Octopoteuthis deletron,None
+79510,Histioteuthis heteropsis,None
+79512,Histioteuthis dofleini,None
+80000,Asteroidea,starfish unidentNone
+80010,Evasterias sp.,None
+80015,Evasterias troschelii,None
+80020,Evasterias echinosoma,None
+80110,Leptasterias groenlandica,None
+80111,Leptasterias hexactis,None
+80200,Lethasterias nanimensis,None
+80540,Henricia sp.,None
+80542,Henricia sanguinolenta,None
+80544,Henricia leviuscula,None
+80546,Henricia tumida,None
+80590,Leptasterias polaris,None
+80594,Leptasterias arctica,None
+80595,Leptasterias sp.,None
+81090,Crossaster sp.,None
+81092,Crossaster borealis,None
+81095,Crossaster papposus,rose sea star
+81310,Pteraster sp.,None
+81315,Pteraster tesselatus,None
+81355,Pteraster obscurus,None
+81360,Diplopteraster multipes,None
+81370,Thrissacanthias penicillatus,None
+81741,Asterias sp.,None
+81742,Asterias amurensis,purple-orange seastar
+82500,Echinoidea,sea urchin unidentNone
+82510,Strongylocentrotus droebachiensis,green sea urchin
+82530,Allocentrotus fragilis,orange-pink sea urchin
+82730,Echinarachnius,sand dollar unidentNone
+82740,Echinarachnius parma,Parma sand dollar
+83000,Ophiuroid unident.,brittlestarfish unidentNone
+83010,Basketstarfish unident. (Use 83020),basketstarfish unidentNone
+83020,Gorgonocephalus caryi,basketstarfish 
+83320,Ophiura sarsi,None
+83400,Ophiopholis aculeata,None
+85000,Holothuroidea (phylum),sea cucumber unidentNone
+85169,Pentamera lissoplaca,Crescent Sea Cucumber
+85180,Bathyplotes sp,Bathyplotes sp
+85200,Cucumaria sp.,None
+85210,Psolus sp.,None
+91000,Porifera,sponge unidentNone
+91050,Halichondria panicea,barrel sponge
+94000,Sipuncula (phylum),sipunculid worm unidentNone
+94500,Echiura sp.,Echiurid worm unidentified
+95000,Bryozoa (phylum),bryozoan unidentNone
+95010,Bryozoan sp. A unident. (brain coral appearance),None
+95020,Eucratea loricata,Feathery bryozoan
+95030,Flustra serrulata,leafy bryozoan
+95050,Porella compressa,flattened bryozoan
+95060,Escharopsis sarsi,None
+95070,Rhamphostomella costata,None
+95080,Cellepora ventricosa,coral bryozoan
+95100,Microporina articulata,None
+97000,Brachiopoda (phylum),brachiopod unidentNone
+97110,Terebratulina sp.,None
+97115,Terebratulina unguicula,None
+97116,Laqueus californianus  (= L. vancouverensis),None
+98000,Ascidiacea (phylum),tunicate unident
+98001,Ascidiacea (phylum),cow-eye tunicate (new species a)
+98002,Ascidiacea (phylum),transparent tunicate (new species b)
+98082,Styela rustica,sea potato
+98100,Boltenia sp.,None
+98105,Boltenia ovifera,None
+98200,Halocynthia sp. (syn. Tethyum sp.),sea peach unidentNone
+98205,Halocynthia aurantium (=Tethyum aurantium),sea peach
+98300,Ascidiacea,compound ascidian unidentNone
+98310,Aplidium sp.,None
+98311,Aplidium new species a,orange aplidium
+98320,Synoicum sp.,None
+99900,Molgula sp.,None
+99990,invertebrate unident.,invertebrate unidentNone
+99993,invertebrate eggs unident.,invertebrate eggs unidentNone
+99994,empty gastropod shells,empty gastropod shells
+99999,Debries,Debries

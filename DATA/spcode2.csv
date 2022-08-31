@@ -1,0 +1,464 @@
+Spcode,Name,Cname,Genus,Taxon,Taxon2,Taxon3,Ecotype ,Taxon2_u
+0,unknown,unknown,unknown,unknown,Other,Other,Other,Other
+1,fish eggs unident.,fish egg,fishegg,Fishegg,Other,Other,Other,Other
+2,Kelp,Kelp,Kelp,Kelp,Other,Other,Other,Other
+471,Bathyraja parmifera,Alaska Skate,Bathyraja,Flat_O,Flatfish,vertebrate,Bottom-dwelling,Flatfish
+10001,Pleuronectiformes,flatfish unidentNone (prevNone flounder unidentNone),Pleuronectiformes,Flatf_PE,Flatfish,vertebrate,Bottom-dwelling,Flatfish
+10115,Reinhardtius hippoglossoides,Greenland turbot,Reinhardtius,Flat_O,Flatfish,vertebrate,Bottom-dwelling,Flatfish
+10120,Hippoglossus stenolepis,Pacific halibut,Hippoglossus,Flat_O,Flatfish,vertebrate,Bottom-dwelling,Flatfish
+10130,Hippoglossoides elassodon,flathead sole,Hippoglossoides,Flat_O,Flatfish,vertebrate,Bottom-dwelling,Flatfish
+10140,Hippoglossoides robustus,Bering flounder,Hippoglossoides,Flat_O,Flatfish,vertebrate,Bottom-dwelling,Flatfish
+10155,Liopsetta glacialis (=Pleuronectes glacialis),Arctic flounder,Liopsetta,Flat_O,Flatfish,vertebrate,Bottom-dwelling,Flatfish
+10210,Limanda aspera,yellowfin sole,Limanda,Flat_LM,Flatfish,vertebrate,Bottom-dwelling,Flatfish
+10211,Limanda proboscidea (=Pleuronectes proboscidea),longhead dab,Limanda,Flat_LM,Flatfish,vertebrate,Bottom-dwelling,Flatfish
+10220,Platichthys stellatus,starry flounder,Platichthys,Flatf_PA,Flatfish,vertebrate,Bottom-dwelling,Flatfish
+10221,Platichthys stellatus X Pleuronectes quadrituberculatus,Hybrid starry flounder X Alaska plaice,Platichthys,Flatf_PA,Flatfish,vertebrate,Bottom-dwelling,Flatfish
+10240,Clidoderma,roughscale sole,Clidoderma asperrimum,Flat_O,Flatfish,vertebrate,Bottom-dwelling,Flatfish
+10250,Psettichthys melanostictus,sand sole,Psettichthys,Flat_O,Flatfish,vertebrate,Bottom-dwelling,Flatfish
+10260,Lepidopsetta sp. (= Pleuronectes in part),rock sole spNone,Lepidopsetta,Flat_O,Flatfish,vertebrate,Bottom-dwelling,Flatfish
+10261,Lepidopsetta peracuata (=Pleuronectes perarcuatus),northern rock sole,Lepidopsetta,Flat_O,Flatfish,vertebrate,Bottom-dwelling,Flatfish
+10262,Lepidopsetta bilineata (prev. Pleuronectes bilineatus),southern rock sole,Lepidopsetta,Flat_O,Flatfish,vertebrate,Bottom-dwelling,Flatfish
+10270,Isopsetta isolepis (=Pleuronectes isolepis),butter sole,Isopsetta,Flat_O,Flatfish,vertebrate,Bottom-dwelling,Flatfish
+10280,Pleuronichthys decurrens,curlfin sole,Pleuronichthys,Flatf_PE,Flatfish,vertebrate,Bottom-dwelling,Flatfish
+10281,Pleuronichthys verticalis,hornyhead turbot,Pleuronichthys,Flatf_PE,Flatfish,vertebrate,Bottom-dwelling,Flatfish
+10285,Pleuronectes quadrituberculatus,Alaska plaice,Pleuronectes,Flatf_PE,Flatfish,vertebrate,Bottom-dwelling,Flatfish
+10290,Pleuronichthys coenosus,C-O sole,Pleuronichthys,Flatf_PE,Flatfish,vertebrate,Bottom-dwelling,Flatfish
+10291,Pleuronichthys sp.,None,Pleuronichthys,Flatf_PE,Flatfish,vertebrate,Bottom-dwelling,Flatfish
+10295,Pleuronichthys ritteri,Pleuronichthys ritteri,Pleuronichthys,Flatf_PE,Flatfish,vertebrate,Bottom-dwelling,Flatfish
+10400,Symphurus atricauda,California tonguefish,Symphurus ,Flat_O,Flatfish,vertebrate,Bottom-dwelling,Flatfish
+20000,Agonidae,poacher unidentNone,Agonidae,Poacher,Poacher,vertebrate,Bottom-dwelling,Poacher
+20001,Pallasina barbata,tubenose poacher,Pallasina,Poacher,Poacher,vertebrate,Bottom-dwelling,Poacher
+20006,Sarritor frenatus,sawback poacher,Sarritor,Poacher,Poacher,vertebrate,Bottom-dwelling,Poacher
+20040,Podothecus acipenserinus (=Agonus acipenserinus),sturgeon poacher,Podothecus,Poacher,Poacher,vertebrate,Bottom-dwelling,Poacher
+20041,Podothecus veternus,Veteran poacher,Podothecus,Poacher,Poacher,vertebrate,Bottom-dwelling,Poacher
+20051,Aspidophoroides olriki,Arctic alligatorfish,Aspidophoroides,Poacher,Poacher,vertebrate,Bottom-dwelling,Poacher
+20060,Occella verrucosa,warty poacher,Occella,Poacher,Poacher,vertebrate,Bottom-dwelling,Poacher
+20061,Occella dodecaedron,Bering poacher,Occella,Poacher,Poacher,vertebrate,Bottom-dwelling,Poacher
+20202,Ammodytes hexapterus,Pacific sand lance,Ammodytes,Sandlance,bottom_f,vertebrate,Bottom-dwelling,bottom_f
+20322,Anarhichas orientalis,Bering wolffish,Anarhichas,Wolffish,bottom_f,vertebrate,Bottom-dwelling,bottom_f
+21110,Clupea pallasi  (=Clupea harengus pallasi),Pacific herring,Clupea,Herring,swim_f,vertebrate,Swimmer,swim_f
+21300,Cottidae,sculpin unidentNone,Cottidae,Sculpn_O,Sculpin,vertebrate,Bottom-dwelling,Sculpin
+21313,Gymnocanthus sp.,None,Gymnocanthus,Sculpn_G,Sculpin,vertebrate,Bottom-dwelling,Sculpin
+21314,Gymnocanthus pistilliger,threaded sculpin,Gymnocanthus,Sculpn_G,Sculpin,vertebrate,Bottom-dwelling,Sculpin
+21315,Gymnocanthus tricuspis,Arctic staghorn sculpin,Gymnocanthus,Sculpn_G,Sculpin,vertebrate,Bottom-dwelling,Sculpin
+21331,Artediellus sp.,None,Artediellus,Sculpn_O,Sculpin,vertebrate,Bottom-dwelling,Sculpin
+21332,Artediellus miacanthus,bride sculpin  (Northern hookear sculpin),Artediellus,Sculpn_O,Sculpin,vertebrate,Bottom-dwelling,Sculpin
+21334,Artediellus scaber,hamecon,Artediellus,Sculpn_O,Sculpin,vertebrate,Bottom-dwelling,Sculpin
+21335,Artediellus uncinatus,Arctic hookear sculpin,Artediellus,Sculpn_O,Sculpin,vertebrate,Bottom-dwelling,Sculpin
+21339,Malacocottus sp.,None,Malacocottus,Sculpn_O,Sculpin,vertebrate,Bottom-dwelling,Sculpin
+21341,Malacocottus zonurus,darkfin sculpin,Malacocottus,Sculpn_O,Sculpin,vertebrate,Bottom-dwelling,Sculpin
+21342,Hemilepidotus sp.,Irish lord,Hemilepidotus,Sculpn_O,Sculpin,vertebrate,Bottom-dwelling,Sculpin
+21346,Hemilepidotus hemilepidotus,red Irish lord,Hemilepidotus,Sculpn_O,Sculpin,vertebrate,Bottom-dwelling,Sculpin
+21347,Hemilepidotus jordani,yellow Irish lord,Hemilepidotus,Sculpn_O,Sculpin,vertebrate,Bottom-dwelling,Sculpin
+21348,Hemilepidotus papilio  (=Melletes papilio),butterfly sculpin,Hemilepidotus,Sculpn_O,Sculpin,vertebrate,Bottom-dwelling,Sculpin
+21350,Triglops sp.,None,Triglops,Sculpn_T,Sculpin,vertebrate,Bottom-dwelling,Sculpin
+21353,Triglops metopias,crescent-tail sculpin,Triglops,Sculpn_T,Sculpin,vertebrate,Bottom-dwelling,Sculpin
+21355,Triglops pingeli,ribbed sculpin,Triglops,Sculpn_T,Sculpin,vertebrate,Bottom-dwelling,Sculpin
+21356,Triglops macellus,roughspine sculpin,Triglops,Sculpn_T,Sculpin,vertebrate,Bottom-dwelling,Sculpin
+21360,Microcottus sellaris,brightbelly sculpin,Microcottus,Sculpn_O,Sculpin,vertebrate,Bottom-dwelling,Sculpin
+21368,Myoxocephalus verrucosus(=M. groenlandicus=M. scorpius),warty sculpin  (=shorthorned sculpin),Myoxocephalus,Sculpn_M,Sculpin,vertebrate,Bottom-dwelling,Sculpin
+21370,Myoxocephalus polyacanthocephalus,great sculpin,Myoxocephalus,Sculpn_M,Sculpin,vertebrate,Bottom-dwelling,Sculpin
+21371,Myoxocephalus jaok,plain sculpin,Myoxocephalus,Sculpn_M,Sculpin,vertebrate,Bottom-dwelling,Sculpin
+21373,Myoxocephalus stelleri (=M. stelleri mednius),frog sculpin,Myoxocephalus,Sculpn_M,Sculpin,vertebrate,Bottom-dwelling,Sculpin
+21375,Myoxocephalus sp.,Myoxocephalus unidentified,Myoxocephalus,Sculpn_M,Sculpin,vertebrate,Bottom-dwelling,Sculpin
+21376,Megalocottus platycephalus,belligerent sculpin,Megalocottus,Sculpn_O,Sculpin,vertebrate,Bottom-dwelling,Sculpin
+21377,Myoxocephalus quadricornis,fourhorn sculpin,Myoxocephalus,Sculpn_M,Sculpin,vertebrate,Bottom-dwelling,Sculpin
+21378,Myoxocephalus scorpioides,Arctic sculpin,Myoxocephalus,Sculpn_M,Sculpin,vertebrate,Bottom-dwelling,Sculpin
+21380,Leptocottus armatus,Pacific staghorn sculpin,Leptocottus,Sculpn_O,Sculpin,vertebrate,Bottom-dwelling,Sculpin
+21384,Enophrys sp.,None,Enophrys,Sculpn_E,Sculpin,vertebrate,Bottom-dwelling,Sculpin
+21387,Enophrys lucasi,leister sculpin,Enophrys,Sculpn_E,Sculpin,vertebrate,Bottom-dwelling,Sculpin
+21388,Enophrys diceraus  (=Enophrys claviger),antlered sculpin,Enophrys,Sculpn_E,Sculpin,vertebrate,Bottom-dwelling,Sculpin
+21390,Dasycottus setiger,spinyhead sculpin,Dasycottus,Sculpn_O,Sculpin,vertebrate,Bottom-dwelling,Sculpin
+21393,Psychrolutes sp.,None,Psychrolutes,Sculpn_O,Sculpin,vertebrate,Bottom-dwelling,Sculpin
+21394,Psychrolutes paradoxus,tadpole sculpin,Psychrolutes,Sculpn_O,Sculpin,vertebrate,Bottom-dwelling,Sculpin
+21397,Blepsias bilobus,crested sculpin,Blepsias,Sculpn_O,Sculpin,vertebrate,Bottom-dwelling,Sculpin
+21405,Nautichthys pribilovius,eyeshade sculpin,Nautichthys,Sculpn_N,Sculpin,vertebrate,Bottom-dwelling,Sculpin
+21423,Eurymen gyrinus,smoothcheek sculpin,Eurymen,Sculpn_O,Sculpin,vertebrate,Bottom-dwelling,Sculpin
+21438,Icelus spiniger,thorny sculpin,Lcelus,Sculpn_O,Sculpin,vertebrate,Bottom-dwelling,Sculpin
+21446,Icelus sp.,None,Lcelus,Sculpn_O,Sculpin,vertebrate,Bottom-dwelling,Sculpin
+21720,Gadus macrocephalus,Pacific cod,Gadus,Gadids_O,Gadids,vertebrate,Bottom-dwelling,Gadids
+21725,Boreogadus saida,Arctic cod,Boreogadus,Gadids_O,Gadids,vertebrate,Bottom-dwelling,Gadids
+21735,Eleginus gracilis,saffron cod,Eleginus,Gadids_E,Gadids,vertebrate,Bottom-dwelling,Gadids
+21740,Theragra chalcogramma,walleye pollock,Theragra,Gadids_O,Gadids,vertebrate,Bottom-dwelling,Gadids
+21753,Pungitius pungitius,ninespine stickleback,Pungitius,Gadids_O,Gadids,vertebrate,Bottom-dwelling,Gadids
+21900,Hexagrammidae,greenling unidentNone,Hexagrammidae,Greeling,Greeling,vertebrate,Bottom-dwelling,Greenling
+21910,Ophiodon elongatus,lingcod,Ophiodon,Greeling,Greeling,vertebrate,Bottom-dwelling,Greenling
+21915,Oxylebius pictus,painted greenling,Oxylebius ,Greeling,Greeling,vertebrate,Bottom-dwelling,Greenling
+21921,Pleurogrammus monopterygius,Atka mackerel,Pleurogrammus,Greeling,Greeling,vertebrate,Bottom-dwelling,Greenling
+21930,Hexagrammos sp.,None,Hexagrammos,Greeling,Greeling,vertebrate,Bottom-dwelling,Greenling
+21931,Hexagrammos octogrammus,masked greenling,Hexagrammos,Greeling,Greeling,vertebrate,Bottom-dwelling,Greenling
+21932,Hexagrammos stelleri,whitespotted greenling,Hexagrammos,Greeling,Greeling,vertebrate,Bottom-dwelling,Greenling
+21934,Hexagrammos lagocephalus,rock greenling,Hexagrammos,Greeling,Greeling,vertebrate,Bottom-dwelling,Greenling
+21935,Hexagrammos decagrammus,kelp greenling,Hexagrammos,Greeling,Greeling,vertebrate,Bottom-dwelling,Greenling
+21936,Zaniolepis latipinnis,longspine combfish,Zaniolepis ,Greeling,Greeling,vertebrate,Bottom-dwelling,Greenling
+21937,Icosteus aenigmaticus,ragfish,Icosteus,Greeling,Greeling,vertebrate,Bottom-dwelling,Greenling
+22178,Eumicrotremus orbis,Pacific spiny lumpsucker,Eumicrotremus,Lumpsucker,bottom_f,vertebrate,Bottom-dwelling,bottom_f
+22200,Cyclopteridae (Liparidinae),snailfish unidentNone,Cyclopteridae,Snailfish,bottom_f,vertebrate,Bottom-dwelling,bottom_f
+22201,Liparis sp.,Snailfish unidentified,Liparis,Snailfish,bottom_f,vertebrate,Bottom-dwelling,bottom_f
+22205,Liparis gibbus (=Liparis cyclostigma),dusky snailfish (prevNone variegated snailfish),Liparis,Snailfish,bottom_f,vertebrate,Bottom-dwelling,bottom_f
+22213,Liparis rutteri,ringtail snailfish,Liparis,Snailfish,bottom_f,vertebrate,Bottom-dwelling,bottom_f
+23041,Mallotus villosus,capelin,Mallotus,Smelt,swim_f,vertebrate,Swimmer,swim_f
+23055,Osmerus mordax,rainbow smelt,Osmerus,Smelt,swim_f,vertebrate,Swimmer,swim_f
+23201,Salmonidae,salmon and trouts unidentNone(prevNone salmon unidentNone),Salmonidae,Salmon,swim_f,vertebrate,Swimmer,swim_f
+23220,Oncorhynchus tshawytscha,chinook salmon,Oncorhynchus,Salmon,swim_f,vertebrate,Swimmer,swim_f
+23225,Oncorhynchus kisutch,coho salmon,Oncorhynchus,Salmon,swim_f,vertebrate,Swimmer,swim_f
+23235,Oncorhynchus keta,chum salmon,Oncorhynchus,Salmon,swim_f,vertebrate,Swimmer,swim_f
+23240,Oncorhynchus nerka,sockeye salmon,Oncorhynchus,Salmon,swim_f,vertebrate,Swimmer,swim_f
+23801,Lumpenus sp.,None,Lumpenus,Prickl_L,Prickleback,vertebrate,Bottom-dwelling,Prickleback
+23803,Eumesogrammus praecisus,fourline snakeblenny,Eumesogrammus,Prickl_O,Prickleback,vertebrate,Bottom-dwelling,Prickleback
+23804,Stichaeus punctatus,Arctic shanny,Stichaeus,Prickl_O,Prickleback,vertebrate,Bottom-dwelling,Prickleback
+23805,Lumpenus maculatus  (=Leptoclinus maculatus),daubed shanny,Lumpenus,Prickl_L,Prickleback,vertebrate,Bottom-dwelling,Prickleback
+23806,Lumpenus medius,stout eelblenny,Lumpenus,Prickl_L,Prickleback,vertebrate,Bottom-dwelling,Prickleback
+23807,Lumpenus fabricii,slender eelblenny,Lumpenus,Prickl_L,Prickleback,vertebrate,Bottom-dwelling,Prickleback
+23808,Lumpenus sagitta,snake prickleback,Lumpenus,Prickl_L,Prickleback,vertebrate,Bottom-dwelling,Prickleback
+23809,Acantholumpenus mackayi,pighead prickleback,Acantholumpenus,Prickl_O,Prickleback,vertebrate,Bottom-dwelling,Prickleback
+23841,Chirolophis decoratus,decorated warbonnet,Chirolophis,Warbonnet,bottom_f,vertebrate,Bottom-dwelling,bottom_f
+23843,Chirolophis snyderi,bearded warbonnet,Chirolophis,Warbonnet,bottom_f,vertebrate,Bottom-dwelling,bottom_f
+24100,Zoarcidae,eelpout unidentNone,Zoarcidae,Eelpout,Eelpout,vertebrate,Bottom-dwelling,Eelpout
+24180,Lycodes sp.,None,Lycodes,Eelpout,Eelpout,vertebrate,Bottom-dwelling,Eelpout
+24184,Lycodes raridens,marbled eelpout  (prevNone sparse toothed lycod),Lycodes,Eelpout,Eelpout,vertebrate,Bottom-dwelling,Eelpout
+24185,Lycodes palearis,wattled eelpout,Lycodes,Eelpout,Eelpout,vertebrate,Bottom-dwelling,Eelpout
+24187,Lycodes concolor (=Lycodes soldatovi),ebony eelpout  (prevNone marbled eelpout),Lycodes,Eelpout,Eelpout,vertebrate,Bottom-dwelling,Eelpout
+24188,Lycodes polaris,Canadian eelpout,Lycodes,Eelpout,Eelpout,vertebrate,Bottom-dwelling,Eelpout
+24189,Lycodes turneri,polar eelpout,Lycodes,Eelpout,Eelpout,vertebrate,Bottom-dwelling,Eelpout
+24191,Lycodes brevipes,shortfin eelpout,Lycodes,Eelpout,Eelpout,vertebrate,Bottom-dwelling,Eelpout
+24192,Gymnelus viridis,fish doctor,Gymnelus,Eelpout,Eelpout,vertebrate,Bottom-dwelling,Eelpout
+40001,Cnideria (phylum)  (Coelenterata),coelenterate unidentNone,Cnideria,Coral,Coral,Invertebrate,Filter-feeder,Coral
+40010,Hydrozoa (class),None,Hydrozoa,Hydra,Invertebrate,Invertebrate,Filter-feeder,Invertebrate
+40011,Hydroid sp.,Hydroid unidentNone,Hydroid,Hydra,Invertebrate,Invertebrate,Filter-feeder,Invertebrate
+40020,Hydractinia sp.,None,Hydractinia,Hydra,Invertebrate,Invertebrate,Filter-feeder,Invertebrate
+40050,Sertularia robusta,None,Sertularia,Hydra,Invertebrate,Invertebrate,Filter-feeder,Invertebrate
+40500,Scyphozoa (class),jellyfish unidentNone,Scyphozoa,Jellyfish,Invertebrate,Invertebrate,Filter-feeder,Invertebrate
+40501,Chrysaora sp.,chrysaora jellyfish,Chrysaora,Jellyfish,Invertebrate,Invertebrate,Filter-feeder,Invertebrate
+41201,Gersemia sp.  (=Eunephthya sp.),sea raspberry,Gersemia,Sea raspberry,Invertebrate,Invertebrate,Filter-feeder,Invertebrate
+41221,Gersemia rubiformis  (=Eunephthya rubiformis),None,Gersemia,Sea raspberry,Invertebrate,Invertebrate,Filter-feeder,Invertebrate
+41500,Gorgonacea (order),coral unidentNone,Gorgonacea,Coral,Coral,Invertebrate,Filter-feeder,Coral
+41520,Primona sp. ,None,Primona,Coral,Coral,Invertebrate,Filter-feeder,Coral
+41530,Primnoa willeyi,None,Primona,Coral,Coral,Invertebrate,Filter-feeder,Coral
+41540,Antipathes sp.,None,Antipathes,Coral,Coral,Invertebrate,Filter-feeder,Coral
+41550,Parantipathes sp.,None,Parantipathes,Coral,Coral,Invertebrate,Filter-feeder,Coral
+41570,Swiftia sp.,None,Swiftia,Coral,Coral,Invertebrate,Filter-feeder,Coral
+41580,Paragorgia sp.,None,Paragorgia,Coral,Coral,Invertebrate,Filter-feeder,Coral
+41582,Paragorgia arborea,None,Paragorgia,Coral,Coral,Invertebrate,Filter-feeder,Coral
+41600,Callogorgia sp.,None,Callogorgia,Coral,Coral,Invertebrate,Filter-feeder,Coral
+41700,Calcigorgia sp.,None,Calcigorgia,Coral,Coral,Invertebrate,Filter-feeder,Coral
+42001,Virgularia sp.,smoothstem seawhip,Virgularia,Coral,Coral,Invertebrate,Filter-feeder,Coral
+42003,Virgularidae,sea whip unidentNone,Virgularia,Coral,Coral,Invertebrate,Filter-feeder,Coral
+42004,Stylatula sp.,slender seawhip,Stylatula ,Coral,Coral,Invertebrate,Filter-feeder,Coral
+42005,Stylatula gracile,roughstem seawhip,Stylatula ,Coral,Coral,Invertebrate,Filter-feeder,Coral
+42008,Pavonaria sp.,None,Pavonaria,Coral,Coral,Invertebrate,Filter-feeder,Coral
+42010,Pavonaria finmarchica,None,Pavonaria,Coral,Coral,Invertebrate,Filter-feeder,Coral
+42015,Umbellula sp.,None,Umbellula,Coral,Coral,Invertebrate,Filter-feeder,Coral
+42017,Ptilosarcus gurneyi (=Leioptilus gurneyi),None,Ptilosarcus,Coral,Coral,Invertebrate,Filter-feeder,Coral
+43000,Actiniaria (order),sea anemone unidentNone,Actiniaria,Sea anemone,Invertebrate,Invertebrate,Filter-feeder,Invertebrate
+43010,Metridium sp.,None,Metridium,Sea anemone,Invertebrate,Invertebrate,Filter-feeder,Invertebrate
+43020,Metridium senile,None,Metridium,Sea anemone,Invertebrate,Invertebrate,Filter-feeder,Invertebrate
+43040,Tealia sp.,Sea anemone,Tealia,Sea anemone,Invertebrate,Invertebrate,Filter-feeder,Invertebrate
+43082,Cribrinopsis fernaldi,None,Cribrinopsis ,Sea anemone,Invertebrate,Invertebrate,Filter-feeder,Invertebrate
+44000,Scleractinia unident.,stony coral unidentNone,Scleractinia,Coral,Invertebrate,Invertebrate,Filter-feeder,Invertebrate
+45000,Ctenophora (phylum),comb jelly unidentNone,Ctenophora,Jellyfish,Invertebrate,Invertebrate,Filter-feeder,Invertebrate
+50000,Polychaeta (class),polychaete worm unidentNone,Polychaeta,Worm,Invertebrate,Invertebrate,Detribor,Invertebrate
+50010,tube worm unident.,None,polychaete worm unident.,Worm,Invertebrate,Invertebrate,Detribor,Invertebrate
+54030,Cheilonereis cyclurus,None,Cheilonereis,Worm,Invertebrate,Invertebrate,Detribor,Invertebrate
+56300,Polynoidae,scale worm unidentNone,Polynoidae,Worm,Invertebrate,Invertebrate,Detribor,Invertebrate
+56310,Eunoe sp.,None,Eunoe,Worm,Invertebrate,Invertebrate,Detribor,Invertebrate
+56311,Eunoe nodosa,giant scale worm,Eunoe,Worm,Invertebrate,Invertebrate,Detribor,Invertebrate
+56312,Eunoe depressa,depressed scale worm,Eunoe,Worm,Invertebrate,Invertebrate,Detribor,Invertebrate
+57000,Sabellidae,sabellid unident.,Sabellidae,Worm,Invertebrate,Invertebrate,Detribor,Invertebrate
+59111,Carcinobdella cyclostomum,striped sea leech,Carcinobdella,Worm,Invertebrate,Invertebrate,Detribor,Invertebrate
+60100,Amphipoda,amphipod unidentNone,Amphipoda,Amphipod,Invertebrate,Invertebrate,Detribor,Invertebrate
+62000,Isopoda (order),isopod unidentNone,Isopoda,Amphipod,Invertebrate,Invertebrate,Detribor,Invertebrate
+62020,Saduria entomon,None,Saduria,Amphipod,Invertebrate,Invertebrate,Detribor,Invertebrate
+63500,Euphausiacea (order),euphausiid unident.,Euphausiacea,Amphipod,Invertebrate,Invertebrate,Detribor,Invertebrate
+64500,Copepoda (class),copepod unident.,Copepoda,Amphipod,Invertebrate,Invertebrate,Detribor,Invertebrate
+65000,Cirripedia (class),None,Cirripedia,Barnacle,Invertebrate,Invertebrate,Detribor,Invertebrate
+65100,Thoracica (order),barnacle unidentNone,Thoracica,Barnacle,Invertebrate,Invertebrate,Detribor,Invertebrate
+65201,Balanus sp.,None,Balanus,Barnacle,Invertebrate,Invertebrate,Detribor,Invertebrate
+65203,Balanus evermanni,giant barnacle,Balanus,Barnacle,Invertebrate,Invertebrate,Detribor,Invertebrate
+65204,Balanus hesperius,crab barnacle,Balanus,Barnacle,Invertebrate,Invertebrate,Detribor,Invertebrate
+65205,Balanus rostratus,beaked barnacle,Balanus,Barnacle,Invertebrate,Invertebrate,Detribor,Invertebrate
+66000,Caridea,shrimp unidentNone,Caridea,Shrimp_O,Shrimp,Invertebrate,Detribor,Shrimp
+66020,Pandalus sp.,None,Pandalus,Shrimp_O,Shrimp,Invertebrate,Detribor,Shrimp
+66045,Pandalus goniurus,humpy shrimp,Pandalus,Shrimp_O,Shrimp,Invertebrate,Detribor,Shrimp
+66050,Pandalus hypsinotus,coonstripe shrimp,Pandalus,Shrimp_O,Shrimp,Invertebrate,Detribor,Shrimp
+66150,Hippolytidae (family),hippolytid shrimp unidentNone,Hippolytidae,Shrimp_O,Shrimp,Invertebrate,Detribor,Shrimp
+66170,Eualus sp.,None,Eualus,Shrimp_O,Shrimp,Invertebrate,Detribor,Shrimp
+66175,Eualus gaimardii belcheri,None,Eualus,Shrimp_O,Shrimp,Invertebrate,Detribor,Shrimp
+66200,Lebbeus sp.,None,Lebbeus,Shrimp_O,Shrimp,Invertebrate,Detribor,Shrimp
+66203,Lebbeus groenlandicus,None,Lebbeus,Shrimp_O,Shrimp,Invertebrate,Detribor,Shrimp
+66204,Lebbeus polaris,Polar lebbeid,Lebbeus,Shrimp_O,Shrimp,Invertebrate,Detribor,Shrimp
+66500,Crangonidae (family),crangonid shrimp unidentNone,Crangonidae,Shrimp_O,Shrimp,Invertebrate,Detribor,Shrimp
+66502,Crangon sp.,None,Crangon,Shrimp_O,Shrimp,Invertebrate,Detribor,Shrimp
+66515,Crangon communis,twospine crangon,Crangon,Shrimp_O,Shrimp,Invertebrate,Detribor,Shrimp
+66530,Crangon dalli,ridged crangon,Crangon,Shrimp_O,Shrimp,Invertebrate,Detribor,Shrimp
+66548,Crangon septemspinosa,sevenspine bay shrimp,Crangon,Shrimp_O,Shrimp,Invertebrate,Detribor,Shrimp
+66570,Argis sp.,None,Argis,Shrimp_A,Shrimp,Invertebrate,Detribor,Shrimp
+66580,Argis dentata,Arctic argid,Argis,Shrimp_A,Shrimp,Invertebrate,Detribor,Shrimp
+66600,Sclerocrangon sp.,None,Sclerocrangon,Shrimp_O,Shrimp,Invertebrate,Detribor,Shrimp
+66601,Sclerocrangon boreas,sculptured shrimp,Sclerocrangon,Shrimp_O,Shrimp,Invertebrate,Detribor,Shrimp
+66602,Rhynocrangon alata,saddleback shrimp,Rhynocrangon,Shrimp_O,Shrimp,Invertebrate,Detribor,Shrimp
+66611,Argis lar,kuro argid,Argis,Shrimp_A,Shrimp,Invertebrate,Detribor,Shrimp
+66612,Argis crassa,rough argid,Argis,Shrimp_A,Shrimp,Invertebrate,Detribor,Shrimp
+66614,Argis ovifer,split-eye argid,Argis,Shrimp_A,Shrimp,Invertebrate,Detribor,Shrimp
+68000,Anormura,Unidentified crab,Anormura,Crab_O,Crab,Invertebrate,Detribor,Crab_O
+68510,Oregonia gracilis,graceful decorator crab,Oregonia,Crab_O,Crab,Invertebrate,Detribor,Crab_O
+68560,Chionoecetes bairdi,Tanner crab(bairdi)),Chionoecetes,Crab_C,Crab,Invertebrate,Detribor,Crab_O
+68577,Hyas coarctatus  (=Hyas coarctatus aleuticus),circumboreal toad crab (=hyas crab (round spined)),Hyas,Crab_H,Crab,Invertebrate,Detribor,Crab_O
+68578,Hyas lyratus,Pacific lyre crab,Hyas,Crab_H,Crab,Invertebrate,Detribor,Crab_O
+68580,Chionoecetes opilio,narrow snow crab(=tanner crab(opilio)),Chionoecetes,Crab_C,Crab,Invertebrate,Detribor,Crab_O
+68590,Chionoecetes hybrid,tanner crab (hybrid),Chionoecetes,Crab_C,Crab,Invertebrate,Detribor,Crab_O
+68781,Telmessus cheiragonus,helmet crab,Telmessus,Crab_T,Crab,Invertebrate,Detribor,Crab_O
+69000,Anomura,None,Anomura,Hermit_C,Invertebrate,Invertebrate,Detribor,Hermit_C
+69010,Paguridae,hermit crab unident,Paguridae,Hermit_C,Invertebrate,Invertebrate,Detribor,Hermit_C
+69035,Pagurus sp.,None,Pagurus,Hermit_C,Invertebrate,Invertebrate,Detribor,Hermit_C
+69042,Pagurus brandti,sponge hermit,Pagurus,Hermit_C,Invertebrate,Invertebrate,Detribor,Hermit_C
+69060,Pagurus aleuticus,Aleutian hermit,Pagurus,Hermit_C,Invertebrate,Invertebrate,Detribor,Hermit_C
+69061,Labidochirus splendescens (=Pagurus splendescens),splendid hermit,Labidochirus,Hermit_C,Invertebrate,Invertebrate,Detribor,Hermit_C
+69065,Pagurus alaskensis(=69090 Pagurus ochotensis),None,Pagurus,Hermit_C,Invertebrate,Invertebrate,Detribor,Hermit_C
+69070,Pagurus confragosus,Pagurus confragosus,Pagurus,Hermit_C,Invertebrate,Invertebrate,Detribor,Hermit_C
+69080,Pagurus cornutus,None,Pagurus,Hermit_C,Invertebrate,Invertebrate,Detribor,Hermit_C
+69082,Pagurus dalli,whiteknee hermit,Pagurus,Hermit_C,Invertebrate,Invertebrate,Detribor,Hermit_C
+69085,Pagurus kennerlyi,bluespine hermit,Pagurus,Hermit_C,Invertebrate,Invertebrate,Detribor,Hermit_C
+69086,Pagurus trigonocheirus,fuzzy hermit crab,Pagurus,Hermit_C,Invertebrate,Invertebrate,Detribor,Hermit_C
+69090,Pagurus ochotensis,Alaskan hermit,Pagurus,Hermit_C,Invertebrate,Invertebrate,Detribor,Hermit_C
+69095,Pagurus rathbuni,longfinger hermit,Pagurus,Hermit_C,Invertebrate,Invertebrate,Detribor,Hermit_C
+69120,Pagurus capillatus,hairy hermit crab,Pagurus,Hermit_C,Invertebrate,Invertebrate,Detribor,Hermit_C
+69250,Lithodidae,stone crab unident,Lithodidae,Crab_O,Crab,Invertebrate,Detribor,Crab_O
+69316,Hapalogaster grebnitzkii,Soft crab,Hapalogaster,Crab_O,Crab,Invertebrate,Detribor,Crab_O
+69322,Paralithodes camtschaticus,red king crab,Paralithodes,Crab_P,Crab,Invertebrate,Detribor,Crab_R
+69323,Paralithodes platypus,blue king crab,Paralithodes,Crab_P,Crab,Invertebrate,Detribor,Crab_B
+70000,Mollusca ,mollusk unident.,Mollusca ,Snail_O,Snail,Invertebrate,Filter-feeder,Snail
+70100,Chitonidea,chiton unidentNone,Chitonidea,Snail_O,Snail,Invertebrate,Filter-feeder,Snail
+70108,Cryptochiton stelleri,Gumboot chiton,Cryptochiton,Snail_O,Snail,Invertebrate,Filter-feeder,Snail
+70115,Amicula vestita,None,Amicula,Snail_O,Snail,Invertebrate,Filter-feeder,Snail
+71001,Gastropod sp. Eggs,Snail eggs,Gastropod,Snail_O,Snail,Invertebrate,Filter-feeder,Snail
+71004,Neptunea sp. eggs,Snail eggs,Neptunea,Snail_N,Snail,Invertebrate,Filter-feeder,Snail
+71010,Nudibranchia,nudibranch unidentNone,Nudibranchia,Snail_O,Snail,Invertebrate,Filter-feeder,Snail
+71030,Tritonia diomedea,Giant orange nudibranch,Tritonia,Snail_O,Snail,Invertebrate,Filter-feeder,Snail
+71250,Nudibranchia,Dorid nudibranch unidentified,Nudibranchia,Snail_O,Snail,Invertebrate,Filter-feeder,Snail
+71500,Gastropod unident.,snail unidentNone,Gastropod,Snail_O,Snail,Invertebrate,Filter-feeder,Snail
+71504,Asterophila japonica,None,Asterophila,Snail_O,Snail,Invertebrate,Filter-feeder,Snail
+71525,Natica sp.,None,Natica,Snail_O,Snail,Invertebrate,Filter-feeder,Snail
+71530,Natica clausa,Arctic moonsnail,Natica,Snail_O,Snail,Invertebrate,Filter-feeder,Snail
+71535,Natica aleutica,None,Natica,Snail_O,Snail,Invertebrate,Filter-feeder,Snail
+71537,Natica russa,rusty moonsnail,Natica,Snail_O,Snail,Invertebrate,Filter-feeder,Snail
+71575,Polinices sp.,None,Polinices,Snail_O,Snail,Invertebrate,Filter-feeder,Snail
+71580,Polinices pallidus,pale moonsnail,Polinices,Snail_O,Snail,Invertebrate,Filter-feeder,Snail
+71585,Onchidiopsis glacialis,icy lamellaria,Onchidiopsis,Snail_O,Snail,Invertebrate,Filter-feeder,Snail
+71586,Capulacmaea commoda (=Piliscus commoda),widemouth lamellaria,Capulacmaea,Snail_O,Snail,Invertebrate,Filter-feeder,Snail
+71634,Tachyrhynchus erosus,eroded turretsnail,Tachyrhynchus,Snail_O,Snail,Invertebrate,Filter-feeder,Snail
+71640,Crepidula sp.,slipper shell,Crepidula,Snail_O,Snail,Invertebrate,Filter-feeder,Snail
+71681,Crepidula grandis,great slippersnail,Crepidula,Snail_O,Snail,Invertebrate,Filter-feeder,Snail
+71710,Colus sp.,None,Colus,Snail_O,Snail,Invertebrate,Filter-feeder,Snail
+71722,Colus hypolispus,oblique whelk,Colus,Snail_O,Snail,Invertebrate,Filter-feeder,Snail
+71723,Colus ombronius,shady whelk,Colus,Snail_O,Snail,Invertebrate,Filter-feeder,Snail
+71726,Colus spitzbergensis,thick-ribbed whelk,Colus,Snail_O,Snail,Invertebrate,Filter-feeder,Snail
+71750,Volutopsius sp. (=Pyrulofusus sp.),None,Volutopsius,Snail_O,Snail,Invertebrate,Filter-feeder,Snail
+71753,Pyrulofusus deformis,warped whelk,Pyrulofusus,Snail_O,Snail,Invertebrate,Filter-feeder,Snail
+71755,Volutopsius harpa,left-hand whelk,Volutopsius,Snail_O,Snail,Invertebrate,Filter-feeder,Snail
+71756,Volutopsius fragilis,fragile whelk,Volutopsius,Snail_O,Snail,Invertebrate,Filter-feeder,Snail
+71759,Volutopsius filosus,threaded whelk,Volutopsius,Snail_O,Snail,Invertebrate,Filter-feeder,Snail
+71760,Volutopsius castaneus,volute whelk,Volutopsius,Snail_O,Snail,Invertebrate,Filter-feeder,Snail
+71763,Volutopsius stefanssoni,shouldered whelk,Volutopsius,Snail_O,Snail,Invertebrate,Filter-feeder,Snail
+71764,Volutopsius middendorffii,tulip whelk,Volutopsius,Snail_O,Snail,Invertebrate,Filter-feeder,Snail
+71772,Beringius beringii,None,Beringius,Snail_B,Snail,Invertebrate,Filter-feeder,Snail
+71774,Beringius stimpsoni,None,Beringius,Snail_B,Snail,Invertebrate,Filter-feeder,Snail
+71800,Neptunea sp.,None,Neptunea,Snail_N,Snail,Invertebrate,Filter-feeder,Snail
+71835,Neptunea borealis,None,Neptunea,Snail_N,Snail,Invertebrate,Filter-feeder,Snail
+71870,Neptunea lyrata,lyre whelk,Neptunea,Snail_N,Snail,Invertebrate,Filter-feeder,Snail
+71882,Neptunea ventricosa,fat whelk,Neptunea,Snail_N,Snail,Invertebrate,Filter-feeder,Snail
+71884,Neptunea heros,Northern Neptune,Neptunea,Snail_N,Snail,Invertebrate,Filter-feeder,Snail
+71891,Plicifusus kroyeri,None,Plicifusus,Snail_O,Snail,Invertebrate,Filter-feeder,Snail
+71894,Plicifusus verkruzeni,None,Plicifusus,Snail_O,Snail,Invertebrate,Filter-feeder,Snail
+71895,Volutopsius callorhinus,None,Volutopsius,Snail_O,Snail,Invertebrate,Filter-feeder,Snail
+71910,Liomesus sp.,None,Liomesus,Snail_O,Snail,Invertebrate,Filter-feeder,Snail
+71911,Liomesus ooides,egg whelk,Liomesus,Snail_O,Snail,Invertebrate,Filter-feeder,Snail
+72019,Antiplanes sp.,None,Antiplanes,Snail_O,Snail,Invertebrate,Filter-feeder,Snail
+72022,Antiplanes piona,None,Antiplanes,Snail_O,Snail,Invertebrate,Filter-feeder,Snail
+72059,Aforia sp.  (=Leucosyrinx sp.),None,Aforia ,Snail_O,Snail,Invertebrate,Filter-feeder,Snail
+72060,Aforia circinata,None,Aforia ,Snail_O,Snail,Invertebrate,Filter-feeder,Snail
+72063,Oenopota sp.,None,Oenopota,Snail_O,Snail,Invertebrate,Filter-feeder,Snail
+72100,Oenopota harpa,None,Oenopota,Snail_O,Snail,Invertebrate,Filter-feeder,Snail
+72103,Oenopota harpa,None,Oenopota,Snail_O,Snail,Invertebrate,Filter-feeder,Snail
+72181,Obesotoma simplex,None,Obesotoma,Snail_O,Snail,Invertebrate,Filter-feeder,Snail
+72300,Trichotropidae,None,Trichotropidae,Snail_O,Snail,Invertebrate,Filter-feeder,Snail
+72303,Trichotropis insignis,gray hairysnail,Trichotropis,Snail_O,Snail,Invertebrate,Filter-feeder,Snail
+72305,Trichotropis bicarinata,two-keel hairysnail,Trichotropis,Snail_O,Snail,Invertebrate,Filter-feeder,Snail
+72370,Trichotropis kroyeri,None,Trichotropis,Snail_O,Snail,Invertebrate,Filter-feeder,Snail
+72403,Boreotrophon muriciformis (=Trophon=Trophonopsis dalli),None,Boreotrophon,Snail_O,Snail,Invertebrate,Filter-feeder,Snail
+72406,Boreotrophon clathratus (=Trophon clathratus),clathrate trophon,Boreotrophon,Snail_O,Snail,Invertebrate,Filter-feeder,Snail
+72420,Boreotrophon sp.,None,Boreotrophon,Snail_O,Snail,Invertebrate,Filter-feeder,Snail
+72510,trochid unident.,trochid unidentNone,Trochid,Snail_O,Snail,Invertebrate,Filter-feeder,Snail
+72533,Margarites giganteus,giant margarite,Margarites,Snail_O,Snail,Invertebrate,Filter-feeder,Snail
+72540,Solariella sp.,None,Solariella,Snail_O,Snail,Invertebrate,Filter-feeder,Snail
+72541,Solariella obscura,None,Solariella,Snail_O,Snail,Invertebrate,Filter-feeder,Snail
+72543,Solariella varicosa,None,Solariella,Snail_O,Snail,Invertebrate,Filter-feeder,Snail
+72740,Buccinum sp.,None,Buccinum,Snail_O,Snail,Invertebrate,Filter-feeder,Snail
+72743,Buccinum angulosum,None,Buccinum,Snail_O,Snail,Invertebrate,Filter-feeder,Snail
+72744,Buccinum fringillum,finch whelk,Buccinum,Snail_O,Snail,Invertebrate,Filter-feeder,Snail
+72752,Buccinum scalariforme,ladder whelk (prevNone silky whelk),Buccinum,Snail_O,Snail,Invertebrate,Filter-feeder,Snail
+72755,Buccinum polare,polar whelk,Buccinum,Snail_O,Snail,Invertebrate,Filter-feeder,Snail
+72756,Buccinum solenum,None,Buccinum,Snail_O,Snail,Invertebrate,Filter-feeder,Snail
+72758,Buccinum glaciale,glacial whelk,Buccinum,Snail_O,Snail,Invertebrate,Filter-feeder,Snail
+72759,Buccinum tenellum,None,Buccinum,Snail_O,Snail,Invertebrate,Filter-feeder,Snail
+72795,Volutomitra alaskana,None,Volutomitra,Snail_O,Snail,Invertebrate,Filter-feeder,Snail
+72800,Velutina undata,wavy lamellaria,Velutina,Snail_O,Snail,Invertebrate,Filter-feeder,Snail
+72802,Velutina plicatilis,oblique lamellaria,Velutina,Snail_O,Snail,Invertebrate,Filter-feeder,Snail
+72805,Velutina velutina,smooth lamellaria,Velutina,Snail_O,Snail,Invertebrate,Filter-feeder,Snail
+73185,Admete laevior,None,Admete,Snail_O,Snail,Invertebrate,Filter-feeder,Snail
+73351,Cylichna alba,white chalice-bubble,Cylichna,Snail_O,Snail,Invertebrate,Filter-feeder,Snail
+74000,Pelecypoda,bivalve unidentNone,Pelecypoda,Bivalves,Bivalves,Invertebrate,Filter-feeder,Bivalves
+74050,Mytilidae,mussel unidentNone,Mytilidae,Bivalves,Bivalves,Invertebrate,Filter-feeder,Bivalves
+74080,Mytilus edulis,blue mussel (prevNone bay mussel),Mytilus,Bivalves,Bivalves,Invertebrate,Filter-feeder,Bivalves
+74311,Hiatella arctica,Arctic hiatella,Hiatella,Bivalves,Bivalves,Invertebrate,Filter-feeder,Bivalves
+74414,Yoldia sp.,Yoldia unidentified,Yoldia,Bivalves,Bivalves,Invertebrate,Filter-feeder,Bivalves
+74417,Yoldia myalis  (prev. file yoldia),None,Yoldia,Bivalves,Bivalves,Invertebrate,Filter-feeder,Bivalves
+74425,Yoldiella sp.,None,Yoldiella,Bivalves,Bivalves,Invertebrate,Filter-feeder,Bivalves
+74435,Nuculana sp.,None,Nuculana,Bivalves,Bivalves,Invertebrate,Filter-feeder,Bivalves
+74560,Musculus sp.,None,Musculus,Bivalves,Bivalves,Invertebrate,Filter-feeder,Bivalves
+74561,Musculus niger,black mussel,Musculus,Bivalves,Bivalves,Invertebrate,Filter-feeder,Bivalves
+74562,Musculus discors,discordant mussel,Musculus,Bivalves,Bivalves,Invertebrate,Filter-feeder,Bivalves
+74639,Astarte crenata,crenulate astarte,Astarte,Bivalves,Bivalves,Invertebrate,Filter-feeder,Bivalves
+74640,Astarte sp.,None,Astarte,Bivalves,Bivalves,Invertebrate,Filter-feeder,Bivalves
+74641,Tridonta borealis (=Astarte borealis),boreal tridonta,Tridonta,Bivalves,Bivalves,Invertebrate,Filter-feeder,Bivalves
+74654,Crassicardia crassidens (=cyclocardia crassidens),thick carditid,Crassicardia,Bivalves,Bivalves,Invertebrate,Filter-feeder,Bivalves
+74655,Cyclocardia crebricostata,many-rib cyclocardia,Cyclocardia,Bivalves,Bivalves,Invertebrate,Filter-feeder,Bivalves
+74980,Clinocardium sp.,cockle unidentNone,Clinocardium,Bivalves,Bivalves,Invertebrate,Filter-feeder,Bivalves
+74981,Cardiidae,cockle unidentNone,Cardiidae,Bivalves,Bivalves,Invertebrate,Filter-feeder,Bivalves
+74982,Clinocardium nuttallii,Nuttall cockle,Clinocardium,Bivalves,Bivalves,Invertebrate,Filter-feeder,Bivalves
+74983,Clinocardium ciliatum,hairy cockle,Clinocardium,Bivalves,Bivalves,Invertebrate,Filter-feeder,Bivalves
+74985,Clinocardium californiense,California cockle,Clinocardium,Bivalves,Bivalves,Invertebrate,Filter-feeder,Bivalves
+75102,Tresus nuttallii,Pacific gaper  (prevNone horse neck clam),Tresus,Bivalves,Bivalves,Invertebrate,Filter-feeder,Bivalves
+75110,Mactromeris sp. (=Spisula sp.),None,Mactromeris,Bivalves,Bivalves,Invertebrate,Filter-feeder,Bivalves
+75111,Mactromeris polynyma (=Spisula polynyma),Arctic surfclam (prevNone  Alaska surf clam),Mactromeris,Bivalves,Bivalves,Invertebrate,Filter-feeder,Bivalves
+75240,Macoma sp.,None,Macoma,Bivalves,Bivalves,Invertebrate,Filter-feeder,Bivalves
+75241,Macoma nasuta,bent-nose macoma (prevNone common macoma),Macoma,Bivalves,Bivalves,Invertebrate,Filter-feeder,Bivalves
+75242,Macoma calcarea,chalky macoma,Macoma,Bivalves,Bivalves,Invertebrate,Filter-feeder,Bivalves
+75247,Macoma brota,heavy macoma,Macoma,Bivalves,Bivalves,Invertebrate,Filter-feeder,Bivalves
+75267,Siliqua alta,Alaska razor   (prevNone northern razor clam),Siliqua,Bivalves,Bivalves,Invertebrate,Filter-feeder,Bivalves
+75284,Serripes sp.,None,Serripes,Bivalves,Bivalves,Invertebrate,Filter-feeder,Bivalves
+75285,Serripes groenlandicus,Greenland cockle,Serripes,Bivalves,Bivalves,Invertebrate,Filter-feeder,Bivalves
+75286,Serripes laperousii,broad cockle,Serripes,Bivalves,Bivalves,Invertebrate,Filter-feeder,Bivalves
+75330,Mya sp.,None,Mya,Bivalves,Bivalves,Invertebrate,Filter-feeder,Bivalves
+75332,Mya arenaria,softshell  (prevNone soft shelled clam),Mya,Bivalves,Bivalves,Invertebrate,Filter-feeder,Bivalves
+75333,Mya truncata,Macoma clam,Mya,Bivalves,Bivalves,Invertebrate,Filter-feeder,Bivalves
+75335,Mya pseudoarenaria,false softshell,Mya,Bivalves,Bivalves,Invertebrate,Filter-feeder,Bivalves
+75336,Mya elegans,elegant soft shell,Mya,Bivalves,Bivalves,Invertebrate,Filter-feeder,Bivalves
+75372,Xylophaga californica,None,Xylophaga ,Bivalves,Bivalves,Invertebrate,Filter-feeder,Bivalves
+75381,Bankia sp.,Shipworm unidentNone,Bankia ,Bivalves,Bivalves,Invertebrate,Filter-feeder,Bivalves
+75382,Bankia setacea,feathery shipworm,Bankia ,Bivalves,Bivalves,Invertebrate,Filter-feeder,Bivalves
+75410,Lyonsia arenosa,sandy lyonsia,Lyonsia,Bivalves,Bivalves,Invertebrate,Filter-feeder,Bivalves
+75551,Cardiomya sp.,None,Cardiomya ,Bivalves,Bivalves,Invertebrate,Filter-feeder,Bivalves
+75600,Pododesmus macroschisma,Alaska falsejingle  (prevNone rock jingle),Pododesmus ,Bivalves,Bivalves,Invertebrate,Filter-feeder,Bivalves
+75609,Anomia sp.,None,Anomia ,Bivalves,Bivalves,Invertebrate,Filter-feeder,Bivalves
+75610,Anomiidae,falsejingles unidentNone(prevNonerock jingles unidentNone),Anomiidae,Bivalves,Bivalves,Invertebrate,Filter-feeder,Bivalves
+77000,Scaphopoda,scaphopod unidentNone,Scaphopoda,Univalve,Invertebrate,Invertebrate,Filter-feeder,Invertebrate
+77011,Dentalium sp.,None,Dentalium ,Univalve,Invertebrate,Invertebrate,Filter-feeder,Invertebrate
+77012,Rhabdus dalli (=Dentalium dalli),Dall tuskshell,Rhabdus,Univalve,Invertebrate,Invertebrate,Filter-feeder,Invertebrate
+78000,Cepalopoda,cephalopod unidentNone,Cepalopoda,Cepalopoda,Invertebrate,Invertebrate,Swimmer,Invertebrate
+78001,Sepiida,cuttlefish unidentNone,Sepiida,Cuttlefish,Invertebrate,Invertebrate,Swimmer,Invertebrate
+78010,Octopodidae,octopus unidentNone,Octopodidae,Octopus,Invertebrate,Invertebrate,Swimmer,Invertebrate
+78011,Octopodidae,pelagic octopus unidentNone,Octopodidae,Octopus,Invertebrate,Invertebrate,Swimmer,Invertebrate
+78012,Octopus leioderma,smoothskin octopus,Octopus ,Octopus,Invertebrate,Invertebrate,Swimmer,Invertebrate
+78030,Opisthoteuthis californiana,flapjack devilfish,Octopus ,Octopus,Invertebrate,Invertebrate,Swimmer,Invertebrate
+78403,Octopus dofleini,giant octopus,Octopus ,Octopus,Invertebrate,Invertebrate,Swimmer,Invertebrate
+78452,Benthoctopus sp.,None,Benthoctopus,Octopus,Invertebrate,Invertebrate,Swimmer,Invertebrate
+78502,Vampyroteuthis infernalis,None,Vampyroteuthis ,Octopus,Invertebrate,Invertebrate,Swimmer,Invertebrate
+79000,Teuthida,squid unidentNone,.,Squid,Invertebrate,Invertebrate,Swimmer,Invertebrate
+79001,Taningia danae,rhomboid squid,Taningia ,Squid,Invertebrate,Invertebrate,Swimmer,Invertebrate
+79020,Rossia pacifica,eastern Pacific bobtail,Rossia ,Squid,Invertebrate,Invertebrate,Swimmer,Invertebrate
+79120,Loligo opalescens,Loligo opalescens,Loligo ,Squid,Invertebrate,Invertebrate,Swimmer,Invertebrate
+79200,Gonatus sp.,None,Gonatus ,Squid,Invertebrate,Invertebrate,Swimmer,Invertebrate
+79201,Gonatus onyx,clawed armhook squid,Gonatus ,Squid,Invertebrate,Invertebrate,Swimmer,Invertebrate
+79202,Gonatus berry,Berry armhook squid,Gonatus ,Squid,Invertebrate,Invertebrate,Swimmer,Invertebrate
+79203,Gonatus pyros,None,Gonatus ,Squid,Invertebrate,Invertebrate,Swimmer,Invertebrate
+79204,Gonatus californiensis,None,Gonatus ,Squid,Invertebrate,Invertebrate,Swimmer,Invertebrate
+79210,Berryteuthis magister,magistrate armhook squid  (prevNone red squid),Berryteuthis,Squid,Invertebrate,Invertebrate,Swimmer,Invertebrate
+79250,Gonatopsis sp.,None,Gonatopsis,Squid,Invertebrate,Invertebrate,Swimmer,Invertebrate
+79252,Gonatopsis borealis,None,Gonatopsis,Squid,Invertebrate,Invertebrate,Swimmer,Invertebrate
+79254,Gonatopsis makko,None,Gonatopsis,Squid,Invertebrate,Invertebrate,Swimmer,Invertebrate
+79260,Ommastrephes bartrami,flying squid,Ommastrephes ,Squid,Invertebrate,Invertebrate,Swimmer,Invertebrate
+79302,Moroteuthis robusta,robust clubhook squid,Moroteuthis ,Squid,Invertebrate,Invertebrate,Swimmer,Invertebrate
+79310,Onychoteuthidae,None,Onychoteuthidae,Squid,Invertebrate,Invertebrate,Swimmer,Invertebrate
+79311,Onychoteuthis banksi,None,Onychoteuthis ,Squid,Invertebrate,Invertebrate,Swimmer,Invertebrate
+79312,Onychoteuthis borealijaponicus,boreal clubhook squid,Onychoteuthis ,Squid,Invertebrate,Invertebrate,Swimmer,Invertebrate
+79351,Abraliopsis sp.,None,Abraliopsis,Squid,Invertebrate,Invertebrate,Swimmer,Invertebrate
+79352,Abraliopsis felis,None,Abraliopsis,Squid,Invertebrate,Invertebrate,Swimmer,Invertebrate
+79404,Chiroteuthis calyx,None,Chiroteuthis,Squid,Invertebrate,Invertebrate,Swimmer,Invertebrate
+79442,Taonius pavo,None,Taonius,Squid,Invertebrate,Invertebrate,Swimmer,Invertebrate
+79504,Octopoteuthis deletron,None,Octopoteuthis,Squid,Invertebrate,Invertebrate,Swimmer,Invertebrate
+79510,Histioteuthis heteropsis,None,Histioteuthis,Squid,Invertebrate,Invertebrate,Swimmer,Invertebrate
+79512,Histioteuthis dofleini,None,Histioteuthis,Squid,Invertebrate,Invertebrate,Swimmer,Invertebrate
+80000,Asteroidea,starfish unidentNone,Asteroidea,Star_A,Starfish,Invertebrate,Predator,Starfish
+80010,Evasterias sp.,None,Evasterias,Star_E,Starfish,Invertebrate,Predator,Starfish
+80015,Evasterias troschelii,None,Evasterias,Star_E,Starfish,Invertebrate,Predator,Starfish
+80020,Evasterias echinosoma,None,Evasterias,Star_E,Starfish,Invertebrate,Predator,Starfish
+80110,Leptasterias groenlandica,None,Leptasterias,Star_L,Starfish,Invertebrate,Predator,Starfish
+80111,Leptasterias hexactis,None,Leptasterias,Star_L,Starfish,Invertebrate,Predator,Starfish
+80200,Lethasterias nanimensis,None,Lethasterias,Star_L,Starfish,Invertebrate,Predator,Starfish
+80540,Henricia sp.,Black-spined sea star,Henricia,Star_O,Starfish,Invertebrate,Predator,Starfish
+80542,Henricia sanguinolenta,None,Henricia,Star_O,Starfish,Invertebrate,Predator,Starfish
+80544,Henricia leviuscula,None,Henricia,Star_O,Starfish,Invertebrate,Predator,Starfish
+80546,Henricia tumida,None,Henricia,Star_O,Starfish,Invertebrate,Predator,Starfish
+80590,Leptasterias polaris,None,Leptasterias,Star_L,Starfish,Invertebrate,Predator,Starfish
+80594,Leptasterias arctica,None,Leptasterias,Star_L,Starfish,Invertebrate,Predator,Starfish
+80595,Leptasterias sp.,None,Leptasterias,Star_L,Starfish,Invertebrate,Predator,Starfish
+81090,Crossaster sp.,None,Crossaster,Star_O,Starfish,Invertebrate,Predator,Starfish
+81092,Crossaster borealis,None,Crossaster,Star_O,Starfish,Invertebrate,Predator,Starfish
+81095,Crossaster papposus,rose sea star,Crossaster,Star_O,Starfish,Invertebrate,Predator,Starfish
+81310,Pteraster sp.,None,Pteraster,Star_O,Starfish,Invertebrate,Predator,Starfish
+81315,Pteraster tesselatus,None,Pteraster,Star_O,Starfish,Invertebrate,Predator,Starfish
+81355,Pteraster obscurus,None,Pteraster,Star_O,Starfish,Invertebrate,Predator,Starfish
+81360,Diplopteraster multipes,None,Diplopteraster,Star_O,Starfish,Invertebrate,Predator,Starfish
+81370,Thrissacanthias penicillatus,None,Thrissacanthias,Star_O,Starfish,Invertebrate,Predator,Starfish
+81741,Asterias sp.,None,Asterias,Star_A,Starfish,Invertebrate,Predator,Starfish
+81742,Asterias amurensis,purple-orange seastar,Asterias,Star_A,Starfish,Invertebrate,Predator,Starfish
+82500,Echinoidea,sea urchin unidentNone,Echinoidea,Sea urchin,Invertebrate,Invertebrate,Detribor,Urchin
+82510,Strongylocentrotus droebachiensis,green sea urchin,Strongylocentrotus,Sea urchin,Invertebrate,Invertebrate,Detribor,Urchin
+82530,Allocentrotus fragilis,orange-pink sea urchin,Allocentrotus,Sea urchin,Invertebrate,Invertebrate,Detribor,Urchin
+82730,Echinarachnius,sand dollar unidentNone,Echinarachnius,Sea urchin,Invertebrate,Invertebrate,Detribor,Invertebrate
+82740,Echinarachnius parma,Parma sand dollar,Echinarachnius,Sea urchin,Invertebrate,Invertebrate,Detribor,Invertebrate
+83000,Ophiuroid unident.,brittlestarfish unidentNone,Ophiuroid,Star_B,Starfish,Invertebrate,Predator,Starfish
+83010,Basketstarfish unident. (Use 83020),basketstarfish unidentNone,Gorgonocephalus,Star_B,Starfish,Invertebrate,Predator,Starfish
+83020,Gorgonocephalus caryi,basketstarfish ,Gorgonocephalus,Star_B,Starfish,Invertebrate,Predator,Starfish
+83320,Ophiura sarsi,None,Ophiura,Star_B,Starfish,Invertebrate,Predator,Starfish
+83400,Ophiopholis aculeata,None,Ophiopholis,Star_B,Starfish,Invertebrate,Predator,Starfish
+85000,Holothuroidea (phylum),sea cucumber unidentNone,Holothuroidea,Sea cucumber,Coral,Invertebrate,Detribor,Coral
+85169,Pentamera lissoplaca,Crescent Sea Cucumber,Pentamera,Sea cucumber,Coral,Invertebrate,Detribor,Coral
+85180,Bathyplotes sp,Bathyplotes sp,Bathyplotes,Sea cucumber,Coral,Invertebrate,Detribor,Coral
+85200,Cucumaria sp.,None,Cucumaria,Sea cucumber,Coral,Invertebrate,Detribor,Coral
+85210,Psolus sp.,None,Psolus,Sea cucumber,Coral,Invertebrate,Detribor,Coral
+91000,Porifera,sponge unidentNone,Porifera,Sponge,Coral,Invertebrate,Filter-feeder,Coral
+91050,Halichondria panicea,barrel sponge,Halichondria,Sponge,Coral,Invertebrate,Filter-feeder,Coral
+94000,Sipuncula (phylum),sipunculid worm unidentNone,Sipuncula,Flatworm,Invertebrate,Invertebrate,Filter-feeder,Invertebrate
+94500,Echiura sp.,Echiurid worm unidentified,Echiura,Flatworm,Invertebrate,Invertebrate,Filter-feeder,Invertebrate
+95000,Bryozoa (phylum),bryozoan unidentNone,Bryozoa,Bryozoa,Coral,Invertebrate,Filter-feeder,Coral
+95010,Bryozoan sp. A unident. (brain coral appearance),None,Bryozoa,Bryozoa,Coral,Invertebrate,Filter-feeder,Coral
+95020,Eucratea loricata,Feathery bryozoan,Eucratea,Bryozoa,Coral,Invertebrate,Filter-feeder,Coral
+95030,Flustra serrulata,leafy bryozoan,Flustra,Bryozoa,Coral,Invertebrate,Filter-feeder,Coral
+95050,Porella compressa,flattened bryozoan,Porella,Bryozoa,Coral,Invertebrate,Filter-feeder,Coral
+95060,Escharopsis sarsi,None,Escharopsis,Bryozoa,Coral,Invertebrate,Filter-feeder,Coral
+95070,Rhamphostomella costata,None,ribbed bryozoan,Bryozoa,Coral,Invertebrate,Filter-feeder,Coral
+95080,Cellepora ventricosa,coral bryozoan,Cellepora,Bryozoa,Coral,Invertebrate,Filter-feeder,Coral
+95100,Microporina articulata,None,Microporina,Bryozoa,Coral,Invertebrate,Filter-feeder,Coral
+97000,Brachiopoda (phylum),brachiopod unidentNone,Brachiopoda,Brachiopoda,Invertebrate,Invertebrate,Filter-feeder,Invertebrate
+97110,Terebratulina sp.,None,Terebratulina,Brachiopoda,Invertebrate,Invertebrate,Filter-feeder,Invertebrate
+97115,Terebratulina unguicula,None,Terebratulina,Brachiopoda,Invertebrate,Invertebrate,Filter-feeder,Invertebrate
+97116,Laqueus californianus  (= L. vancouverensis),None,Laqueus,Brachiopoda,Invertebrate,Invertebrate,Filter-feeder,Invertebrate
+98000,Ascidiacea (phylum),tunicate unident,Ascidiacea,Sea squirts,Coral,Invertebrate,Filter-feeder,Coral
+98001,Ascidiacea (phylum),cow-eye tunicate (new species a),Ascidiacea,Sea squirts,Coral,Invertebrate,Filter-feeder,Coral
+98002,Ascidiacea (phylum),transparent tunicate (new species b),Ascidiacea,Sea squirts,Coral,Invertebrate,Filter-feeder,Coral
+98082,Styela rustica,sea potato,Styela,Sea squirts,Coral,Invertebrate,Filter-feeder,Coral
+98100,Boltenia sp.,None,Boltenia,Sea squirts,Coral,Invertebrate,Filter-feeder,Coral
+98105,Boltenia ovifera,None,Boltenia,Sea squirts,Coral,Invertebrate,Filter-feeder,Coral
+98200,Halocynthia sp. (syn. Tethyum sp.),sea peach unidentNone,Halocynthia,Sea squirts,Coral,Invertebrate,Filter-feeder,Coral
+98205,Halocynthia aurantium (=Tethyum aurantium),sea peach,Halocynthia,Sea squirts,Coral,Invertebrate,Filter-feeder,Coral
+98300,Ascidiacea,compound ascidian unidentNone,Ascidiacea,Sea squirts,Coral,Invertebrate,Filter-feeder,Coral
+98310,Aplidium sp.,None,Aplidium,Sea squirts,Coral,Invertebrate,Filter-feeder,Coral
+98311,Aplidium new species a,orange aplidium,Aplidium,Sea squirts,Coral,Invertebrate,Filter-feeder,Coral
+98320,Synoicum sp.,None,Synoicum,Sea squirts,Coral,Invertebrate,Filter-feeder,Coral
+99900,Molgula sp.,None,Molgula,Sea grapes,Coral,Invertebrate,Filter-feeder,Coral
+99990,invertebrate unident.,invertebrate unidentNone,Invertebrate,Invertebrate,Invertebrate,Invertebrate,Other,Invertebrate
+99993,invertebrate eggs unident.,invertebrate eggs unidentNone,inv_e,Invertebrate,Invertebrate,Invertebrate,Other,Invertebrate
+99994,empty gastropod shells,empty gastropod shells,Shell,Debries,Other,Other,Other,Other
+99999,Debries,Debries,Debries,Debries,Other,Other,Other,Other

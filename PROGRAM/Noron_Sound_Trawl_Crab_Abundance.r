@@ -1,11 +1,11 @@
-###########################################################################
+################################################################################
 #   Norton Sound Trawl Survey Harvest Estimation Program in R
 #   Version 1.1   02/07/2017
 #   This program esitmate abundance of
 #   Legal (CW>120mm)
 #   Pre-recruit 1 and 2 
 #   By Toshihide "Hamachan" Hamazaki
-############################################################################
+################################################################################
 
 #-------------------------------------------------------------------------------
 #  0.0  Initialize working Environment                                          
@@ -35,7 +35,7 @@ data_file1 <- 'ADFG/ADFG_Crab.csv'
 data_file2 <- 'NMFS_76_91/NOAA_Crab.csv'
 data_file3 <- 'NOAA_NBS/NOAA_RKC_NBS.csv'
 # Set classification  'ADFG' or 'CPT'
-classification <- 'CPT' 
+classification <- 'ADFG' 
 # Use retow TRUE or FALSE 
 retow <- FALSE
 # Ignore unknown male size-shell crab? 
@@ -189,9 +189,9 @@ by.tier[order(by.tier$ADFG_tier,by.tier$Year,by.tier$Agent),]
 # limit data to CPT_STD area 
 if (classification == 'CPT'){
 # Limit data to standardized area 
-#crabdata.est.c <- crabdata.est.w[crabdata.est.w$CPT_STD =='S',] 
+crabdata.est.c <- crabdata.est.w[crabdata.est.w$CPT_STD =='S',] 
 # Expand area to entier NS. 
-crabdata.est.c <- crabdata.est.w[crabdata.est.w$ADFG_tier !='ONS',] 
+#crabdata.est.c <- crabdata.est.w[crabdata.est.w$ADFG_tier !='ONS',] 
 crabsum <- summaryBy(Total ~ Year+Agent,FUN=c(sum,mean,sd,length),data=crabdata.est.c)
 #crabsum$estsum <-  76*crabsum$Total.mean/1000
 crabsum$cv <- with(crabsum,sqrt(Total.length)*Total.sd/Total.sum)

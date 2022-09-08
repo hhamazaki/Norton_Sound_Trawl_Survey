@@ -76,7 +76,7 @@ haul <- merge(haul,station[,c('ADFG_Station','Area_Nm2','ADFG_tier','CPT_STD')],
 # Data file name:  Keep in the data directory
 raise <- read.csv(paste0(data_dir,'ADFG/',data_file3), na='', header=TRUE)
 # Calculate rasie factor 
-raise$Adjusted_Catch_kg <- with(raise, Gross_Catch_Weight_kg - Tare_kg - Large_fish.Debris_kg - RKC_kg)
+raise$Adjusted_Catch_kg <- with(raise, Gross_Catch_Weight_kg - Tare_kg - Large_fish_Debris_kg - RKC_kg)
 raise$rf <- with(raise, as.numeric(Adjusted_Catch_kg)/as.numeric(SubSample_Weight_kg))
 # If raise factor is less than 1 change to 1  
 raise[which(raise$SubSample_Weight_kg==0|raise$rf<1),'rf'] <- 1

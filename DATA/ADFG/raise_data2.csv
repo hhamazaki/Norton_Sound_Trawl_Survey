@@ -1,4 +1,4 @@
-Haul,ADFG_Station,Year,Gross_Catch_Weight_kg,Tare_kg,Large_fish&Debris_kg,RKC_kg,SubSample_Weight_kg,Remarks
+Haul,ADFG_Station,Year,Gross_Catch_Weight_kg,Tare_kg,Large_fish_Debris_kg,RKC_kg,SubSample_Weight_kg,Remarks
 1,134,1999,705,270,0,0,42.2,
 2,133,1999,920,270,0,0,37,
 3,132,1999,475,190,0,0,42.42,
@@ -142,7 +142,7 @@ Haul,ADFG_Station,Year,Gross_Catch_Weight_kg,Tare_kg,Large_fish&Debris_kg,RKC_kg
 1,187,2006,616,152,0,1.48,46,
 2,186,2006,1374,142,876,55,54,
 3,185,2006,270,152,2,20,96,
-4,*185*,2006,348,150,0,53,22,"retow, 4+ legal red king (but not parallel to haul #3)"
+4,185,2006,348,150,0,53,22,"retow, 4+ legal red king (but not parallel to haul #3)"
 5,184,2006,284,146,0,2,34,
 6,183,2006,312,140,3.05,0.57,46,
 7,182,2006,254,138,0,0.65,44,
@@ -155,7 +155,7 @@ Haul,ADFG_Station,Year,Gross_Catch_Weight_kg,Tare_kg,Large_fish&Debris_kg,RKC_kg
 14,156,2006,210,144,0,1.75,22,
 15,157,2006,212,140,0,2.62,42,
 16,204,2006,476,150,304,0,22,Note: whole haul subsample weight sum=better indicator of adjusted nc weight
-17,*186*,2006,318,140,12.55,10.35,48,"retow, didn't tow on center point"
+17,186,2006,318,140,12.55,10.35,48,"retow, didn't tow on center point"
 18,161,2006,440,154,0,0,58,
 19,134,2006,435,140,0,1.5,38,
 20,135,2006,366,128,67.7,1,44,

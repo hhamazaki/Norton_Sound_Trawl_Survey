@@ -11,21 +11,22 @@
 #  0.0  Initialize working Environment                                          
 #-------------------------------------------------------------------------------
 rm(list=ls(all=TRUE))
-library(doBy)
 library(reshape2)
 #-------------------------------------------------------------------------------
 #  0.1  Define Folder Directories:                                                    
 #-------------------------------------------------------------------------------
 # Data folder location 
-data_dir <- 'C:/Projects/Norton_Sound/NSCrab/Trawl_data/NS_Trawl_Survey/DATA/'
+base_dir <- file.path('C:','Projects','Norton_Sound','NSCrab','Trawl_data','NS_Trawl_Survey')
+setwd(base_dir)
+data_dir <- file.path(base_dir,'DATA')
 # Output table folder location 
-out_data_dir <- 'C:/Projects/Norton_Sound/NSCrab/Trawl_data/NS_Trawl_Survey/PROGRAM/'
+out_data_dir <- file.path(base_dir,'PROGRAM')
 # Source R-code folder location 
-source_dir <- 'C:/Projects/Norton_Sound/NSCrab/Trawl_data/NS_Trawl_Survey/PROGRAM/R-code/'
+source_dir <- file.path(out_data_dir,'R-code')
 #-------------------------------------------------------------------------------
 #  0.2 Read haul data  
 #-------------------------------------------------------------------------------
-source(paste0(source_dir,'Noron_Sound_Read_tow_data.r'))
+source(file.path(source_dir,'Noron_Sound_Read_tow_data.r'))
 		
 #===============================================================================
 #  0.3 Define crab data   
@@ -35,7 +36,7 @@ data_file1 <- 'ADFG/ADFG_Crab.csv'
 data_file2 <- 'NMFS_76_91/NOAA_Crab.csv'
 data_file3 <- 'NOAA_NBS/NOAA_RKC_NBS.csv'
 # Set classification  'ADFG' or 'CPT'
-classification <- 'ADFG' 
+classification <- 'CPT' 
 # Use retow TRUE or FALSE 
 retow <- FALSE
 # Ignore unknown male size-shell crab? 
@@ -121,6 +122,7 @@ crabdata$class[is.na(crabdata$class)] <- 'UNK'
 # 5.0  Calculate total number of crab by class and combine with haul data
 ############################################################################
 ncrab <- aggregate(Sampling.Factor ~ Year+Agent+Haul+class, FUN=sum, data=crabdata)
+#ncrab <- aggregate(Sampling.Factor ~ Year+Agent+Haul, FUN=sum, data=crabdata)
 names(ncrab)[5] <- 'n'
 # merge ncrab data with haul data 
 crabdata <- merge(haul,ncrab, by = c('Year','Agent','Haul'),all=TRUE)
@@ -141,6 +143,13 @@ crabdata.r <- crabdata[which(is.na(crabdata$Haul_rate)),]
 }
 # Average out retow data 
 crabdata.est <- aggregate(estnm ~ Year+Agent+ADFG_Station+ADFG_tier+CPT_STD+class, FUN=mean, data=crabdata.r)
+crabdata.n <- aggregate(n ~ Year+Agent+ADFG_Station+ADFG_tier+CPT_STD+class, FUN=sum, data=crabdata.r)
+crabdata.nw <- dcast(crabdata.n, Year+ADFG_Station+ADFG_tier+CPT_STD+Agent~class)
+write.csv(crabdata.nw,'ADFG_NBS_crab_n.csv')
+crabdata.cpue <- aggregate(cpuenm ~ Year+Agent+ADFG_Station+ADFG_tier+CPT_STD+class, FUN=mean, data=crabdata.r)
+ADFG_NBS <- crabdata.cpue[with(crabdata.cpue,(Year %in% c(2017,2019,2021,2023)) & (ADFG_Station %in% c(79,81,121,123,125,127,129,131,133,135,176,180,186))),]
+ADFG_NBS.w <- dcast(ADFG_NBS, Year+ADFG_Station+ADFG_tier+CPT_STD~class+Agent)
+write.csv(ADFG_NBS.w,'ADFG_NBS.csv')
 
 ############################################################################
 # 6.0  Remove resample and no ADF&G station data       
@@ -154,8 +163,26 @@ crabdata.est <- crabdata.est[,c('Year','Agent','ADFG_Station','ADFG_tier','CPT_S
 
 # Change data from long to wide format 
 crabdata.est.w <- dcast(crabdata.est, Year+Agent+ADFG_Station+ADFG_tier+CPT_STD~class)
+crabdata.est.w$Total[crabdata.est.w$NOCrab ==0] <- 0
+crabdata.est.w$Total<- ifelse(!is.na(crabdata.est.w$female)&is.na(crabdata.est.w$Total),
+                             crabdata.est.w$female,crabdata.est.w$Total)
+							 
+
+crabdata.n.w <- dcast(crabdata.n, Year+Agent+ADFG_Station+ADFG_tier+CPT_STD~class)
+crabdata.cpue.w <- dcast(crabdata.r, Year+Agent+ADFG_Station+Haul+Month+Day+Latitude+Longitude+Swept_NM2+Depth_m+Bottom_Temp+Surface_Temp+ADFG_tier~class, value.var='cpuenm')
+
+write.csv(crabdata.cpue.w,'cpue.csv')
+temp <- aggregate(Total ~ Year+Agent+ADFG_Station,mean, data=crabdata.est.w)
+crabdata.est.w <- dcast(temp, ADFG_Station~Year+Agent,fun.aggregate = mean,value.var='Total')
+temp <- merge(station, crabdata.est.w,by='ADFG_Station')
+write.csv(temp,'VAST.csv')
+ 
+head(temp)
+
+
 # Add 0 to NA
 crabdata.est.w[is.na(crabdata.est.w)] <- 0
+crabdata.n.w[is.na(crabdata.n.w)] <- 0
 # Extract class name 
 if(unknown == FALSE){
 classes <- names(crabdata.est.w)[-c(1:5)]
@@ -177,10 +204,12 @@ crabdata.est.w[,sclass] <- crabdata.est.w[,sclass]+unkadd
 if (classification == 'ADFG'){
 crabsum <- aggregate(cbind(female,Legal,Pre1,Pre2,Pre3) ~ Year+Agent,FUN=sum,data=crabdata.est.w)
 crabsd <- aggregate(cbind(female,Legal,Pre1,Pre2,Pre3) ~ Year+Agent,FUN=sd,data=crabdata.est.w)
-crabn <- aggregate(cbind(female,Legal,Pre1,Pre2,Pre3) ~ Year+Agent,FUN=length,data=crabdata.est.w)
+crabn <- aggregate(cbind(female,Legal,Pre1,Pre2,Pre3) ~ Year+Agent+ADFG_tier,FUN=sum,data=crabdata.n.w)
 crabsum[order(crabsum$Year,crabsum$Agent),]
+crabn[order(crabn$Year,crabn$Agent,crabn$ADFG_tier),]
+
 by.tier <- aggregate(cbind(female,Legal,Pre1,Pre2,Pre3) ~ Year+Agent+ADFG_tier,FUN=sum,data=crabdata.est.w)
-by.tier[order(by.tier$ADFG_tier,by.tier$Year,by.tier$Agent),]
+by.tier[order(by.tier$Year,by.tier$Agent,by.tier$ADFG_tier),]
 }
 
 ############################################################################

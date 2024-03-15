@@ -1,3 +1,8 @@
+#  Spcode Error.csv   ,,
+# Some catch data contains species codes that do not exist in the NOAA Sp code book  ,,
+# This is an attempt to correct the code (in Spcode) to the most likely code (Spcode.n),,
+,,
+,,
 Spcode,Spcode.n,Note
 9800,98000,Type_Error?
 10226,10262,Type_Error?

@@ -1,6 +1,7 @@
 ###########################################################################
 #   Norton Sound Trawl Survey Harvest Estimation Program in R
 #   Version 1.1   02/07/2017
+#   Version 2.0   03/31/2024
 #   By Toshihide "Hamachan" Hamazaki
 ############################################################################
 
@@ -27,11 +28,9 @@ source_dir <- file.path(base_dir,'PROGRAM','R-code')
 ############################################################################
 # Data file name:  Keep in the data directory
 data_file1 <- 'NOAA_1976_1991_Haul_data.csv'
-data_file2 <- 'ADFG_Haul_data.csv'
-data_file3 <- 'raise_data2.csv'
-data_file4 <- 'NBS_Haul_DATA.csv'
+data_file2 <- 'Station.csv'
+data_file3 <- 'NBS_Haul_DATA.csv'
 data_file5 <- 'NOAA_NBS_Station.csv'
-data_file6 <- 'Station.csv'
 
 #---------------------------------------------------------------------------
 # Conversion factors 
@@ -44,6 +43,9 @@ fathom.to.m <- 1.8288
 ############################################################################
 # 1.0  Read Haul data    
 ############################################################################
+#---------------------------------------------------------------------------
+#  Read historical NMFS data 
+#---------------------------------------------------------------------------
 # Data file name:  Keep in the data directory
 NOAA.haul <- read.csv(file.path(data_dir,'NMFS_76_91',data_file1), na ='', header = TRUE)
 # NOAA DATA: calculated as net width(50ft)*(0003048: convert to Km)*tow distance(NM)*(1.852: convert to km)
@@ -55,18 +57,23 @@ NOAA.haul <- NOAA.haul[,c('Year','Agent','ADFG_Station','Vessel','Haul','Haul_ra
 
 #---------------------------------------------------------------------------
 #  Read ADF&G Data
+#  ADF&G are organized annually and combined
 #---------------------------------------------------------------------------
+# Find the file names of historical Haul data in the Haul_data folder
 haul.file.list <- list.files(file.path(data_dir,'ADFG','Haul','Haul_data'))
+# n: number of filses 
 n <- length(haul.file.list)
+# read each file and combine to make a single ADFG.haul data 
 ADFG.haul <- data.frame()
 for(i in 1:n){
  temp <- read.csv(file.path(data_dir,'ADFG','Haul','Haul_data',haul.file.list[i]),na='',header=TRUE)
  ADFG.haul <- rbind(ADFG.haul,temp)
 }
-# Change format 
+# Change format (Station is numeric)
 ADFG.haul$Station <- as.numeric(ADFG.haul$Station)
 # rename Staion to ADFG_Station
 names(ADFG.haul)[names(ADFG.haul)=='Station'] <- 'ADFG_Station'
+# Change date format 
 ADFG.haul$Date <- as.Date(ADFG.haul$Date,format='%m/%d/%Y')
 ADFG.haul$Month <- as.integer(format(ADFG.haul$Date, "%m"))
 ADFG.haul$Day <- as.integer(format(ADFG.haul$Date, "%d"))
@@ -101,24 +108,24 @@ ADFG.haul <- ADFG.haul[,c('Year','Agent','ADFG_Station','Vessel','Haul','Haul_ra
 # Combine data  
 haul <- rbind(NOAA.haul,ADFG.haul)
 
-
-
-
 ############################################################################
-# 5.0  Read Station data    
+# 1.1  Read Station data and combine  
 ############################################################################
-station <- read.csv(file.path(data_dir,data_file6),header=TRUE)
+station <- read.csv(file.path(data_dir,data_file2),header=TRUE)
 haul <- merge(haul,station[,c('ADFG_Station','Area_Nm2','ADFG_tier','CPT_STD')], by=c('ADFG_Station'),all.x = TRUE)
+
 ############################################################################
-# 2.0 Read raise data (ADFG survey)  
+# 2.0 Read raise data (ADFG survey only)  
 ############################################################################
-# Data file name:  Keep in the data directory
+# Data file name in the Subsample_data folder 
 raise.file.list <- list.files(file.path(data_dir,'ADFG','Haul','Subsample_data'))
 n <- length(raise.file.list)
+# combine all subsample data 
 ADFG.raise <- data.frame()
 for(i in 1:n){
  temp <- read.csv(file.path(data_dir,'ADFG','Haul','Subsample_data',raise.file.list[i])) 
  temp[is.na(temp)] <- 0
+ # if SubSample_Weight_kg data does not exist, create by summing the 3 subsamples 
  if(!'SubSample_Weight_kg' %in%(names(temp))){
  temp$SubSample_Weight_kg = with(temp,SubSample_Weight_kg_1+SubSample_Weight_kg_2+SubSample_Weight_kg_3)
  }
@@ -129,7 +136,7 @@ for(i in 1:n){
 
 # Adjusted cath is Gross cath minus tare, large fish, debris, and RKC
 ADFG.raise$Adjusted_Catch_kg <- with(ADFG.raise, Gross_Catch_Weight_kg - Tare_kg - Large_fish_Debris_kg - RKC_kg)
-# raise factor is adjusted catch devided by subsample weight
+# raise factor is adjusted catch divided by subsample weight
 ADFG.raise$rf <- with(ADFG.raise, as.numeric(Adjusted_Catch_kg)/as.numeric(SubSample_Weight_kg))
 # If raise factor is less than 1 change to 1  
 ADFG.raise[which(ADFG.raise$SubSample_Weight_kg==0|ADFG.raise$rf<1),'rf'] <- 1
@@ -137,10 +144,10 @@ ADFG.raise <- ADFG.raise[,c('Haul','Year','rf')]
 ADFG.raise$Agent <-'ADFG'
 
 ############################################################################
-#  3.0 Read 2010 NOAA survey data      
+#  3.0 Read NOAA NBS survey data (downloded from NOAA NBS survey)     
 ############################################################################
-nbs.haul <- read.csv(file.path(data_dir,'NOAA_NBS',data_file4)) 
-nbs.station <- read.csv(file.path(data_dir,'NOAA_NBS',data_file5)) 
+nbs.haul <- read.csv(file.path(data_dir,'NOAA_NBS',data_file3)) 
+nbs.station <- read.csv(file.path(data_dir,'NOAA_NBS',data_file4)) 
 nbs <- merge(nbs.haul,nbs.station, by = c('NOAA_Station'),all.x=TRUE)
 nbs$Haul<- with(nbs, Haul + 100*Vessel)
 # Calculatate tow area (km^2)

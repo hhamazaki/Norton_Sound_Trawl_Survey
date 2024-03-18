@@ -1,3 +1,9 @@
+# Spcode.csv,,,,,,,,
+# Derived from NOAA Species code book and NBS survey ,,,,,,,,
+# Taxon.Confidence  indicates how confident  species Iding is. ,,,,,,,,
+"# Taxon, Taxon2, Taxon3, Ecotype are arbitrary classifications to group individual species to some cohesive groups.",,,,,,,,
+#,,,,,,,,
+#,,,,,,,,
 Spcode,me,Cme,Genus,Taxon.Confidence,Taxon,Taxon2,Taxon3,Ecotype
 0,unknown,unknown,unknown,,unknown,Other,Other,Other
 1,fish eggs unident.,fish egg,fishegg,High,Fishegg,Other,Other,Other

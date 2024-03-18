@@ -1,3 +1,9 @@
+# 1999 Trawl survey length weight data ,,,,,,,,,,
+# PC_liver PC_stomac PC_sex: Sampled for P-cod.,,,,,,,,,,
+# Only length data were corrected,,,,,,,,,,
+#,,,,,,,,,,
+#,,,,,,,,,,
+#,,,,,,,,,,
 Year,Haul,Station,Species,Species Code,Size(mm),weight (lb),weight (kg),PC_liver,PC_stomach,PC_sex
 1999,3,,Starry flounder,10220,490,,,,,
 1999,3,,Starry flounder,10220,300,,,,,

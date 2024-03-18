@@ -1,3 +1,9 @@
+"#  ADF&G 2008 trawl survey Haul data   # Haul_rate : r (retow), d(bad tow)  ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+# The survey combined ADFG (1-69)and NSEDC trawls  NSEDC (70-88) Haul numbers were converted to sequntial of ADFG Haul number ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+# ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+#,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+#,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+#,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 Year,Haul,Station,Haul_rate,Net,Date,Lat_Deg_Start,Lat_Min_Start,Long_Deg_Start,Long_Min_Start,Lat_Deg_End,Lat_Min_End,Long_Deg_End,Long_Min_End,Compas,Time_Start,Time_End,Tow_minutes,Tow_dist_NM,Depth_Min_fm,Depth_Max_fm,Depth_Ave_fm,Clouds,Sea,Swell,Scope_fm,Gear_perf,Temp_Surf_C,Temp_Bottom_C,Sal_PSU,Comments
 2008,1,155,,used'06,7/24/2008,64,9.99,164,12.46,64,9.71,164,10.22,106,18:18,18:46,27.5,1,9.5,10,9.7,4,1,1,100,20,,6.1,,
 2008,2,126,,used'06,7/24/2008,64,0.02,163,27.97,64,0.19,163,25.74,81,21:32,21:59,26.2,1,9.9,10,9.9,4,2,1,100,20,,4,,

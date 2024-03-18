@@ -1,3 +1,9 @@
+"#  ADF&G 1996 trawl survey Haul data   # Haul_rate : r (retow), d(bad tow)  ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+# End tow lat long were not available ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+# Surface Temp not available ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+#,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+#,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+#,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 Year,Haul,Station,Haul_rate,Net,Date,Lat_Deg_Start,Lat_Min_Start,Long_Deg_Start,Long_Min_Start,Lat_Deg_End,Lat_Min_End,Long_Deg_End,Long_Min_End,Compas,Time_Start,Time_End,Tow_minutes,Tow_dist_NM,Depth_Min_fm,Depth_Max_fm,Depth_Ave_fm,Clouds,Sea,Swell,Scope_fm,Gear_perf,Temp_Surf_C,Temp_Bottom_C,Sal_PSU,Comments
 1996,1,184,,,8/7/1996,64,19.95,165,22.91,,,,,91,07:30,07:57,27,1.4,13,12,12,,,,80,22,,10,,
 1996,2,184,r,,8/7/1996,64,17.91,165,10.89,,,,,289,09:33,10:01,28,1.3,10,10,10,,,,80,20,,10,,

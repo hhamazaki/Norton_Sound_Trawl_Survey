@@ -31,10 +31,6 @@ source(file.path(source_dir,'Noron_Sound_Read_tow_data.r'))
 #===============================================================================
 #  0.3 Define crab data   
 #===============================================================================
-# Data file name:  Keep in the data directory
-data_file1 <- 'ADFG/ADFG_Crab.csv'
-data_file2 <- 'NMFS_76_91/NOAA_Crab.csv'
-data_file3 <- 'NOAA_NBS/NOAA_RKC_NBS.csv'
 # Set classification  'ADFG' or 'CPT'
 classification <- 'CPT' 
 # Use retow TRUE or FALSE 
@@ -68,20 +64,30 @@ st <- c('Year','Agent','Haul','Sex','Size_mm','Legal','Sampling.Factor')
 #===============================================================================
 # 1.0  Read ADFG Crab data  
 #===============================================================================
-# Data file name:  Keep in the data directory
-adfg <- read.csv(paste0(data_dir,data_file1),na='.',header=TRUE)
+# Find the file names of ADFG Crab data in the Crab folder
+crab.file.list <- list.files(file.path(data_dir,'ADFG','Crab'))
+# n: number of filses 
+n <- length(crab.file.list)
+# read each file and combine to make a single ADFG.haul data 
+ADFG.crab <- data.frame()
+for(i in 1:n){
+ temp <- read.csv(file.path(data_dir,'ADFG','Crab',crab.file.list[i]), skip = 6, na='',header=TRUE)
+ ADFG.crab <- rbind(ADFG.crab,temp)
+}
+# Change format (Station is numeric)
+
 # Add Sampling factor  
-adfg$Sampling.Factor <- 1
-adfg$Size_mm[adfg$Size_mm==0] <- NA  
+ADFG.crab$Sampling.Factor <- 1
+ADFG.crab$Size_mm[ADFG.crab$Size_mm==0] <- NA  
 # Add Agent name 
-adfg$Agent <- 'ADFG'
-adfg <- adfg[,st]
+ADFG.crab$Agent <- 'ADFG'
+ADFG.crab <- ADFG.crab[,st]
 
 #===============================================================================
 # 2.0  Read NOAA Crab data  
 #===============================================================================
 # Data file name:  Keep in the data directory
-noaa <- read.csv(paste0(data_dir,data_file2),na='.',header=TRUE)
+noaa <- read.csv(file.path(data_dir,'NMFS_76_91','NOAA_1976_1991_Crab.csv'),skip=6,header=TRUE)
 # 1: sublegal or female, 2: Legal
 noaa$Legal <- ifelse(noaa$Size_mm >104 & noaa$Sex ==1,2,1)
 noaa$Size_mm[noaa$Size_mm==0] <- NA  
@@ -93,23 +99,33 @@ noaa <- noaa[,st]
 #===============================================================================
 # 3.0  Read NOAA NBS Crab data  
 #===============================================================================
-# Data file name:  Keep in the data directory
-noaaNBS <- read.csv(paste0(data_dir,data_file3),na='',header=TRUE)
+# Find the file names of ADFG Crab data in the Crab folder
+crab.file.list <- list.files(file.path(data_dir,'NOAA_NBS','Crab'))
+# n: number of filses 
+n <- length(crab.file.list)
+# read each file and combine to make a single ADFG.haul data 
+NBS.crab <- data.frame()
+for(i in 1:n){
+ temp <- read.csv(file.path(data_dir,'NOAA_NBS','Crab',crab.file.list[i]), skip = 6, na='',header=TRUE)
+NBS.crab <- rbind(NBS.crab,temp)
+}
+# Change format (Station is numeric)
+
 # 1: sublegal or female, 2: Legal
-noaaNBS$Legal <- ifelse(noaaNBS$Size_mm >104 & noaaNBS$Sex ==1,2,1)
-noaaNBS$Size_mm[noaaNBS$Size_mm==0] <- NA  
+NBS.crab$Legal <- ifelse(NBS.crab$Size_mm >104 & NBS.crab$Sex ==1,2,1)
+NBS.crab$Size_mm[NBS.crab$Size_mm==0] <- NA  
 # Renumber Hauls 
-noaaNBS$Haul <- with(noaaNBS, Haul + 10*Vessel - min(Vessel))
+NBS.crab$Haul <- with(NBS.crab, Haul + 100*Vessel)
 # Add Agent name
-noaaNBS$Agent <- 'NBS'
+NBS.crab$Agent <- 'NBS'
 # Remove unnecessary data 
-noaaNBS <- noaaNBS[,st]
+NBS.crab <- NBS.crab[,st]
 
 #===============================================================================
 # 4.0  Create Data for Abundance Analyses   
 #===============================================================================
 # Combine all data 
-crabdata <- rbind(noaa,adfg,noaaNBS)
+crabdata <- rbind(noaa,ADFG.crab,NBS.crab)
 # Remove data with No sex info 
 crabdata <- crabdata[!is.na(crabdata$Sex),]
 # Classify Crab based 
@@ -130,6 +146,7 @@ crabdata$class[is.na(crabdata$class)] <- 'NOCrab'
 crabdata$n[is.na(crabdata$n)] <- 0 
 #write.csv(crabdata.w,paste(data_dir,'crabdata_vast.csv',sep=''),row.names=T) 
 # calculate abundance 
+
 crabdata$estkm <- with(crabdata,n*Area_Nm2*(1.852^2)/Swept_km2)
 crabdata$estnm <- with(crabdata,n*Area_Nm2/Swept_NM2)
 crabdata$cpuenm <- with(crabdata,n/Swept_NM2)
@@ -141,6 +158,7 @@ crabdata.r <- crabdata[which(is.na(crabdata$Haul_rate)|crabdata$Haul_rate != 'd'
 if(retow == FALSE){ 
 crabdata.r <- crabdata[which(is.na(crabdata$Haul_rate)),]
 }
+
 # Average out retow data 
 crabdata.est <- aggregate(estnm ~ Year+Agent+ADFG_Station+ADFG_tier+CPT_STD+class, FUN=mean, data=crabdata.r)
 crabdata.n <- aggregate(n ~ Year+Agent+ADFG_Station+ADFG_tier+CPT_STD+class, FUN=sum, data=crabdata.r)
@@ -221,13 +239,15 @@ if (classification == 'CPT'){
 crabdata.est.c <- crabdata.est.w[crabdata.est.w$CPT_STD =='S',] 
 # Expand area to entier NS. 
 #crabdata.est.c <- crabdata.est.w[crabdata.est.w$ADFG_tier !='ONS',] 
-crabsum <- summaryBy(Total ~ Year+Agent,FUN=c(sum,mean,sd,length),data=crabdata.est.c)
-#crabsum$estsum <-  76*crabsum$Total.mean/1000
-crabsum$cv <- with(crabsum,sqrt(Total.length)*Total.sd/Total.sum)
+crabsum <- aggregate(Total ~ Year+Agent,data=crabdata.est.c,FUN = function(x) c(sum = sum(x),mean = mean(x),sd = sd(x),n = length(x)))
+crabsum <- do.call(data.frame, crabsum)
+ 
+crabsum$cv <- with(crabsum,sqrt(Total.n)*Total.sd/Total.sum)
 print(crabsum)
-crabsum.f <- summaryBy(female ~ Year+Agent,FUN=c(sum,sd,length),data=crabdata.est.c)
-crabsum.f$cv <- with(crabsum.f,sqrt(female.length)*female.sd/female.sum)
-#print(crabsum.f)
+crabsum.f <- aggregate(female ~ Year+Agent,data=crabdata.est.c,FUN = function(x) c(sum = sum(x),mean = mean(x),sd = sd(x),n = length(x)))
+crabsum.f <- do.call(data.frame, crabsum.f)
+crabsum.f$cv <- with(crabsum.f,sqrt(female.n)*female.sd/female.sum)
+print(crabsum.f)
 }
 
 

@@ -1,3 +1,9 @@
+# ADFG_Crab_2023.csv,,,,,,,,,,,,,
+# 2023 Trawl Survey Crab data ,,,,,,,,,,,,,
+#  Legal size based on CW,,,,,,,,,,,,,
+"#  Female J: Juvenile (no eggs and belly flap not extended fully to coxa), M Mature (with eggs or belly flap extended fully to coxa)",,,,,,,,,,,,,
+"# Male:  9: < 76 (pre3), 7: 76-89 (pre2), 5: 90-104 (pre1), 1: 105-115 (recruits), 3: > 115 (post recruits)",,,,,,,,,,,,,
+"# 5 (1): Pre-1 by length but legal so count as recruit,  1 (5): Recruit by length but sublegal; count as pre-1, 1 (3): Recruit by length but postrecruit by age, count as postrecruit.",,,,,,,,,,,,,
 Year,Haul,ADFG_Station,Sex,Size_mm,Legal,Shell,Other,Clutch,Egg Stage,Egg condition,Egg color,Durometer,JM
 2023,1,183,1,123,2,3,,,,,,,
 2023,1,183,1,120,2,3,,,,,,,

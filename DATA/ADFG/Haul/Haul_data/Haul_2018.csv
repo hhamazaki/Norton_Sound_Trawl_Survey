@@ -1,3 +1,9 @@
+"#  ADF&G 2018 trawl survey Haul data   # Haul_rate : r (retow), d(bad tow)  ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+# ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+# ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+#,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+#,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+#,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 Year,Haul,Station,Haul_rate,Net,Date,Lat_Deg_Start,Lat_Min_Start,Long_Deg_Start,Long_Min_Start,Lat_Deg_End,Lat_Min_End,Long_Deg_End,Long_Min_End,Compas,Time_Start,Time_End,Tow_minutes,Tow_dist_NM,Depth_Min_fm,Depth_Max_fm,Depth_Ave_fm,Clouds,Sea,Swell,Scope_fm,Gear_perf,Temp_Surf_C,Temp_Bottom_C,Sal_PSU,Comments
 2018,1,185,,,7/22/2018,64,20.01,165,43.92,64,20.03,165,46.23,268,10:42,11:06,25,1,10.8,10.9,10.9,9,1,1,33,20,12.6,9.04,,
 2018,2,186,,,7/22/2018,64,20.02,166,8.35,64,20,166,6.05,90,12:29,12:52,23,1,12.2,12.5,12.4,9,1,1,37,20,13.2,4.24,,

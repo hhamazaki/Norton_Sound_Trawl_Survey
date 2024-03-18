@@ -1,3 +1,9 @@
+#  NOAA_NBS_Station.csv,,
+# This adds station corresponding information between NOAA NBS and ADFG survey,,
+# Blank ADFG Stations meen no matching ADFG survey stations (outside of Norton Sound),,
+#,,
+#,,
+#,,
 NOAA_Station,ADFG_Station,Area_Nm2
 AA-01,,
 AA-02,85,399.1961371

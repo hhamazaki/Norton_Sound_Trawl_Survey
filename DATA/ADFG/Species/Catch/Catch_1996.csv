@@ -1,3 +1,9 @@
+# 1996 Trawl survey species data,,,,,,,,,,,
+# Subsamples were weights and numbers were already converted to whole weight and numbers,,,,,,,,,,,
+# Original Subsample data could not be located,,,,,,,,,,,
+#,,,,,,,,,,,
+#,,,,,,,,,,,
+#,,,,,,,,,,,
 Year,Haul,Spcode,Wt.Sample1,No.Sample2,Wt.Sample2,No.Sample2,Sample_kg,Sample_n,Whole_kg,Whole_n,Comments
 1996,2,10120,0,0,0,0,,,18.1,1,
 1996,2,10210,2,48,0,0,,,29.2,702,

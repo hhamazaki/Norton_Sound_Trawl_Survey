@@ -1,3 +1,9 @@
+# NOAA_1976_1991_Crab.csv,,,,,,,,,
+#  Data provided by NOAA Kodiak over years,,,,,,,,,
+#  The original data may not exist or hidden in NOAA,,,,,,,,,
+#,,,,,,,,,
+#,,,,,,,,,
+#,,,,,,,,,
 Year,Haul,NMFS_Station,Sex,Size_mm,Shell,Egg color,Egg condition,Clutch,Sampling Factor
 1976,1,g10,1,103,3,,,,1
 1976,1,g10,1,105,2,,,,1

@@ -1,3 +1,9 @@
+"#  ADF&G 2021 trawl survey Haul data   # Haul_rate : r (retow), d(bad tow)  ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+# ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+# ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+#,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+#,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+#,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 Year,Haul,Station,Haul_rate,Net,Date,Lat_Deg_Start,Lat_Min_Start,Long_Deg_Start,Long_Min_Start,Lat_Deg_End,Lat_Min_End,Long_Deg_End,Long_Min_End,Compas,Time_Start,Time_End,Tow_minutes,Tow_dist_NM,Depth_Min_fm,Depth_Max_fm,Depth_Ave_fm,Clouds,Sea,Swell,Scope_fm,Gear_perf,Temp_Surf_C,Temp_Bottom_C,Sal_PSU,Comments
 2021,1,184,,,7/19/2021,64,19.65,165,22.3,64,20.09,165,20.22,70,08:35,08:56,21,1,11.7,12.6,,6,1,2,36,20,,8.4,,
 2021,2,185,,,7/19/2021,64,20.03,165,43.74,64,20.56,165,46,286,10:45,11:07,22,1,11.2,11.4,,9,1,2,35,20,,6.4,,

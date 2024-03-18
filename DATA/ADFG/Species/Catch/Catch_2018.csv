@@ -1,3 +1,9 @@
+#  2018 Trawl Suvery Species data ,,,,,,,
+#  Sample weight and numbers are the sum of 3 subsamples,,,,,,,
+#  Whole weight and numbers actual number and weight pulled from the entier tow before subsamples were taken,,,,,,,
+#,,,,,,,
+#,,,,,,,
+#,,,,,,,
 Year,Haul,Spcode,Sample_kg,Sample_n,Whole_kg,Whole_n,Comments
 2018,1,69322,,,,2,
 2018,1,10120,,,7.22,2,

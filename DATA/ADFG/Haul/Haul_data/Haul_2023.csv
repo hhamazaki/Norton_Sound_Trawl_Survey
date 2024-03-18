@@ -1,3 +1,9 @@
+"#  ADF&G 2023 trawl survey Haul data   # Haul_rate : r (retow), d(bad tow)  ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+# ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+# ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+#,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+#,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+#,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 Year,Haul,Station,Haul_rate,Net,Date,Lat_Deg_Start,Lat_Min_Start,Long_Deg_Start,Long_Min_Start,Lat_Deg_End,Lat_Min_End,Long_Deg_End,Long_Min_End,Compas,Time_Start,Time_End,Tow_minutes,Tow_dist_NM,Depth_Min_fm,Depth_Max_fm,Depth_Ave_fm,Clouds,Sea,Swell,Scope_fm,Gear_perf,Temp_Surf_C,Temp_Bottom_C,Sal_PSU,Comments
 2023,1,183,,,7/21/2023,64,20.017,164,59.504,64,20.177,164,2.042,274,933,959,26,1.1,17.3,7.8,17.5,9,2,2,30,20,13.2885,6.89,28.0299,
 2023,2,184,,,7/21/2023,64,20.216,165,22.688,64,20.134,165,25.589,262,1222,1247,25,1.1,12.3,12.5,12.4,9,2,2,20,,13.6286,7.42,28.0262,

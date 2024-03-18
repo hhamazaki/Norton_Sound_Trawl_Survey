@@ -1,3 +1,9 @@
+"#  ADF&G 2006 trawl survey Haul data   # Haul_rate : r (retow), d(bad tow)  ",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+# Bottom temp data unavailable,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+# The survey combined ADFG (1-76)and NSEDC trawls  NSEDC (77-125) Haul numbers were converted to sequntial of ADFG Haul number ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+#,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+#,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+#,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 Year,Haul,Station,Haul_rate,Net,Date,Lat_Deg_Start,Lat_Min_Start,Long_Deg_Start,Long_Min_Start,Lat_Deg_End,Lat_Min_End,Long_Deg_End,Long_Min_End,Compas,Time_Start,Time_End,Tow_minutes,Tow_dist_NM,Depth_Min_fm,Depth_Max_fm,Depth_Ave_fm,Clouds,Sea,Swell,Scope_fm,Gear_perf,Temp_Surf_C,Temp_Bottom_C,Sal_PSU,Comments
 2006,1,187,,Homer,7/25/2006,64,18.66,166,32.07,64,18.72,166,29.96,86,18:54,19:21,26.9,1,14,14,14,9,1,1,75,20,13.8,,,
 2006,2,186,,Homer,7/25/2006,64,24.29,166,13.57,64,23.62,166,11.89,133,21:10,21:37,26.3,1,15,19,17,9,1,1,75,20,17,,,

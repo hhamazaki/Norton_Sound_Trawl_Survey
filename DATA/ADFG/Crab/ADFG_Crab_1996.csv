@@ -1,3 +1,9 @@
+# ADFG_Crab_1996.csv,,,,,,,,,,,,,
+# 1996 Trawl Survey Crab data ,,,,,,,,,,,,,
+#  Legal size based on CL not CW,,,,,,,,,,,,,
+# Female J M based on presence of egg,,,,,,,,,,,,,
+#,,,,,,,,,,,,,
+#,,,,,,,,,,,,,
 Year,Haul,ADFG_Station,Sex,Size_mm,Legal,Shell,Other,Clutch,Egg Stage,Egg condition,Egg color,Durometer,JM
 1996,2,184,1,56,1,2,2,0,0,0,0,42,
 1996,2,184,1,62,1,2,2,0,0,0,0,20,

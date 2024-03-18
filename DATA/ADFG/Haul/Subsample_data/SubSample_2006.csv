@@ -1,3 +1,9 @@
+# 2006 Trawl Survey Subsampe data ,,,,,,,,,
+"# 3 subsamples were takein at each tow, but only total subusample data were avaiable",,,,,,,,,
+# All subsample data were entered as integer,,,,,,,,,
+#,,,,,,,,,
+#,,,,,,,,,
+#,,,,,,,,,
 Year,Haul,ADFG_Station,Date,Gross_Catch_Weight_kg,Tare_kg,Large_fish_Debris_kg,RKC_kg,SubSample_Weight_kg,Remarks
 2006,1,187,7/25/2006,616,152,0,1.48,46,
 2006,2,186,7/25/2006,1374,142,876,55,54,

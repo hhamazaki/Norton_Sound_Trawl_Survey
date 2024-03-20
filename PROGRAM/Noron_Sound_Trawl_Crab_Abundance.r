@@ -87,7 +87,7 @@ ADFG.crab <- ADFG.crab[,st]
 # 2.0  Read NOAA Crab data  
 #===============================================================================
 # Data file name:  Keep in the data directory
-noaa <- read.csv(file.path(data_dir,'NMFS_76_91','NOAA_1976_1991_Crab.csv'),skip=6,header=TRUE)
+noaa <- read.csv(file.path(data_dir,'NMFS_76_91','NMFS_1976_1991_Crab.csv'),skip=6,header=TRUE)
 # 1: sublegal or female, 2: Legal
 noaa$Legal <- ifelse(noaa$Size_mm >104 & noaa$Sex ==1,2,1)
 noaa$Size_mm[noaa$Size_mm==0] <- NA  

@@ -27,7 +27,7 @@ source_dir <- file.path(base_dir,'PROGRAM','R-code')
 source(file.path(base_dir,'PROGRAM','R-code','Noron_Sound_Read_tow_data.r'))
 
 # remove retow data 
-data_file1 <- 'Species76-91.csv'
+data_file1 <- 'NMFS_1976-1991_Catch.csv'
 data_file3 <- 'NB_SP_DATA.csv'
 data_file4 <- 'Spcode.csv'
 data_file5 <- 'Spcode_Error.csv'

@@ -34,7 +34,7 @@ fathom.to.m <- 1.8288
 #  Read historical NMFS data 
 #---------------------------------------------------------------------------
 # Data file name:  Keep in the data directory
-data_file1 <- 'NOAA_1976_1991_Haul_data.csv'
+data_file1 <- 'NMFS_1976_1991_Haul_data.csv'
 NOAA.haul <- read.csv(file.path(data_dir,'NMFS_76_91',data_file1), skip = 6,na ='', header = TRUE)
 # NOAA DATA: calculated as net width(50ft)*(0003048: convert to Km)*tow distance(NM)*(1.852: convert to km)
 NOAA.haul$Swept_km2 <- with(NOAA.haul,50*ft.to.km*tow_distance_NM*nm.km)

@@ -22,7 +22,7 @@ The project consists of 2 Major folders
 * PROGRAM  R code for estimating RKC abundance, Species CPUE Index 
     * Norton_Sound_Trawl_CPUE_Index.r  : Create annual trawl survey species index
     * Norton_Sound_Crab_Abundance.r: Create annual trawl survey crab abundance 
-    # R-code:  Contains Source file that read and haul data 
+    * R-code:  Contains Source file that read and haul data 
     
       
      

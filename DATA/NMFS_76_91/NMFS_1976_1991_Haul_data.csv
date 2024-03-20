@@ -1,8 +1,8 @@
 #  NMFS_1976_1991_Haul_data.csv ,,,,,,,,,,,,
-"# Trawl survey Haul data , originated from historical files from NOAA (1976-1979) and database (NOAA: 1982-1991) ",,,,,,,,,,,,
+# Trawl survey Haul data , originated from historical files from NOAA (1976-1979) and database (NOAA: 1982-1991) ",,,,,,,,,,,,
 #,,,,,,,,,,,,
-"# NOAA_Station: Original NMFS survey station ID (No longer used),  Stations without ADFG station indicate outside of NS area  # Haul_rate : r (retow), d(bad tow)  ",,,,,,,,,,,,
-"# Lattitude, longitude  start of tow. ",,,,,,,,,,,,
+# NOAA_Station: Original NMFS survey station ID (No longer used),  Stations without ADFG station indicate outside of NS area  # Haul_rate : r (retow), d(bad tow)  ",,,,,,,,,,,,
+# Lattitude, longitude  start of tow. ",,,,,,,,,,,,
 #,,,,,,,,,,,,
 NOAA_Station,ADFG_Station,Haul ,Haul_rate,Month,Day,Year,Latitude,Longitude,tow_distance_NM,Depth_m,Bottom_Temp,Surface_Temp
 G10,129,1,,9,2,1976,64,-164.6,1.9,21,8.6,11

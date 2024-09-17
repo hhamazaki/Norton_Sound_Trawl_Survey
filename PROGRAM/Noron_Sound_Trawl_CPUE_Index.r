@@ -26,8 +26,8 @@ source_dir <- file.path(base_dir,'PROGRAM','R-code')
 #-------------------------------------------------------------------------------
 source(file.path(base_dir,'PROGRAM','R-code','Noron_Sound_Read_tow_data.r'))
 
-# remove retow data 
-data_file1 <- 'NMFS_1976-1991_Catch.csv'
+
+data_file1 <- 'NMFS_1976_1991_Catch.csv'
 data_file3 <- 'NB_SP_DATA.csv'
 data_file4 <- 'Spcode.csv'
 data_file5 <- 'Spcode_Error.csv'
@@ -147,10 +147,18 @@ names(nssp.s)[4:6] <- c('ml.cpue','ns','nt')
 # I.CPUE is geometric mean CPUE Index. 
 nssp.s$I.CPUE <- with(nssp.s,exp(ml.cpue)*ns/nt)
 #Add spcode 
-
 nssp.s <- merge(nssp.s,spn,by=c('Spcode'))
+#write.csv(nssp.syw, file.path(data_dir,'CPUE_Index2.csv'),row.names = FALSE,na = '',)
 
-write.csv(nssp.s, file.path(data_dir,'CPUE_Index.csv'),row.names = FALSE,na = '',)
+nssp.sy <- aggregate(I.CPUE ~ Spcode+Cme+Year,FUN=mean,data=nssp.s)
+nssp.syw <- dcast(nssp.sy, Spcode+Cme ~ Year)
+nssp.syw$n <- apply(nssp.syw[,-c(1:2)],1,function(x) length(x)-sum(is.na(x)))
+nssp.syw <- nssp.syw[order(nssp.syw$n,decreasing = FALSE),]
+foo <- as.matrix(nssp.syw[,-c(1:2,dim(nssp.syw)[2])])
+foo[is.na(foo)] <- 0
+rownames(foo) <- nssp.syw$Cme
+
+heatmap(foo[nssp.syw$n>10,],Colv=NA,Rowv=NA,col = cm.colors(256),scale='row')
 
 
 
@@ -191,10 +199,13 @@ ADFG_NBS_haul <- dcast(ADFG_NBS_haul,Year+ADFG_Station~Agent,value.var='Date')
 ADFG_NBS_haul$Dif <-  with(ADFG_NBS_haul,as.Date(NBS,"%m/%d")-as.Date(ADFG,"%m/%d"))
 # Remove stations that both surveys did not occur 
 ADFG_NBS_haul <-  ADFG_NBS_haul[complete.cases(ADFG_NBS_haul),]
+# Limit data to survey occured within 7 days
+ADFG_NBS_haul <-  ADFG_NBS_haul[ADFG_NBS_haul$Dif < 8,]
+
 # Go back to long form. 
-ADFG_NBS_haul <-  melt(ADFG_NBS_haul,id=c('Year','ADFG_Station'),variable.name = 'Agent')
+#ADFG_NBS_haul <-  melt(ADFG_NBS_haul,id.vars=c('Year','ADFG_Station'),variable.name = 'Agent')
 # Merge with CPUE data 
-ADFG_NBS <- merge(nssp,ADFG_NBS_haul[,c('Year','ADFG_Station','Agent')], by=c('Year','ADFG_Station','Agent'))
+ADFG_NBS <- merge(nssp,ADFG_NBS_haul[,c('Year','ADFG_Station')], by=c('Year','ADFG_Station'))
 # Back to side by side by Stations and Species code 
 ADFG_NBS.w  <- dcast(ADFG_NBS,Year+ADFG_Station+Spcode~Agent,value.var='CPUE')
 # NA indicate the species were not caught by one survey.  Change to zero
@@ -213,12 +224,14 @@ temps <- data.frame(Spcode = Sp[i], p.value = tests$p.value)
 test <- rbind(test,temps)
 }
 ADFG_NBS.comp <- aggregate(cbind(ADFG,NBS)~Spcode,mean, data=ADFG_NBS.w)
-ADFG_NBS.comp.s <- merge(ADFG_NBS.comp, spn[,c('Spcode','Cme')], by = 'Spcode',all=TRUE)
+ADFG_NBS.comp <- merge(ADFG_NBS.comp,test,by='Spcode')
+
+ADFG_NBS.comp.s <- merge(spn[,c('Spcode','me','Taxon.Confidence')],ADFG_NBS.comp,by = 'Spcode')
+
 
 
 ADFG_NBS.comp <- merge(ADFG_NBS.comp, test, by = 'Spcode')
 ADFG_NBS.comp.s<-ADFG_NBS.comp[ADFG_NBS.comp$p.value<0.05,]
 ADFG_NBS.comp.s <- merge(ADFG_NBS.comp.s, spn[,c('Spcode','Cme')], by = 'Spcode')
-ADFG_NBS.comp[which(ADFG_NBS.comp$ADFG==0|ADFG_NBS.comp$NBS==0),]
-
+write.csv(ADFG_NBS.comp.s, file.path(data_dir,'CPUE_Index.csv'),row.names = FALSE,na = '',)
 

@@ -23,11 +23,6 @@ data_dir <- file.path(base_dir,'DATA')
 out_data_dir <- file.path(base_dir,'PROGRAM')
 # Source R-code folder location 
 source_dir <- file.path(out_data_dir,'R-code')
-#-------------------------------------------------------------------------------
-#  0.2 Read haul data  
-#-------------------------------------------------------------------------------
-source(file.path(source_dir,'Noron_Sound_Read_tow_data.r'))
-		
 #===============================================================================
 #  0.3 Define crab data   
 #===============================================================================
@@ -37,6 +32,26 @@ classification <- 'CPT'
 retow <- FALSE
 # Ignore unknown male size-shell crab? 
 unknown <- FALSE
+
+#-------------------------------------------------------------------------------
+#  0.2 Read haul data  
+#-------------------------------------------------------------------------------
+source(file.path(source_dir,'Noron_Sound_Read_tow_data.r'))
+# Remove bad tow data (Keep retow data)
+haul <- haul[which(is.na(haul$Haul_rate)|haul$Haul_rate != 'd'),]
+# Remove retow data
+if(isFALSE(retow)){ 
+haul <- haul[which(is.na(haul$Haul_rate)),]
+}
+# Remove hauls with no area data 
+haul <- haul[which(!is.na(haul$Area_Nm2)),]
+#'------------------------------------------------------------------------------
+#' Alternate data Analyses:  Use only stations for NBS
+#'------------------------------------------------------------------------------
+names(nbs.station)[names(nbs.station) == 'Area_Nm2'] <- 'NBS_Nm2'
+haul.nbs <- merge(haul, nbs.station[,c('ADFG_Station','NBS_Nm2')], by = 'ADFG_Station')
+haul.nbs$Area_Nm2 <- haul.nbs$NBS_Nm2
+
 
 #===============================================================================
 # functions
@@ -126,48 +141,58 @@ NBS.crab <- NBS.crab[,st]
 #===============================================================================
 # Combine all data 
 crabdata <- rbind(noaa,ADFG.crab,NBS.crab)
-# Remove data with No sex info 
+# Remove data with No sex info: Just remove 2 crabs so far... 
 crabdata <- crabdata[!is.na(crabdata$Sex),]
 # Classify Crab based 
 if (classification == 'CPT'){crabdata$class <- cpt.class(crabdata)}
 if (classification == 'ADFG'){crabdata$class <- adfg.class(crabdata)}
 # Add NA class 
 crabdata$class[is.na(crabdata$class)] <- 'UNK'
-
+ncrab <- aggregate(Sampling.Factor ~ Year+Agent+Haul+class, FUN=sum, data=crabdata)
+names(ncrab)[5] <- 'n'
+#' if unknown is false, then allocate unknown to males. 
+if(isFALSE(unknown)){
+ncrab.w <- dcast(ncrab, Year+Agent+Haul~class)
+ncrab.w[is.na(ncrab.w)] <- 0
+classes <- names(ncrab.w)[-c(1:3)]
+sclass <- classes[!classes %in% c('female','UNK')]
+unkadd <- (ncrab.w$UNK*ncrab.w[,sclass]/ifelse(rowSums(ncrab.w[,sclass])==0,1,rowSums(ncrab.w[,sclass])))
+ncrab.w[,sclass] <- ncrab.w[,sclass]+unkadd
+ncrab <- melt(ncrab.w, id.vars=c('Year','Agent','Haul'), variable.name='class',value.name='n')
+}
+# Remove Unknowns 
+ncrab <- ncrab[which(ncrab$class != 'UNK'),]
+ 
 ############################################################################
 # 5.0  Calculate total number of crab by class and combine with haul data
 ############################################################################
-ncrab <- aggregate(Sampling.Factor ~ Year+Agent+Haul+class, FUN=sum, data=crabdata)
-#ncrab <- aggregate(Sampling.Factor ~ Year+Agent+Haul, FUN=sum, data=crabdata)
-names(ncrab)[5] <- 'n'
 # merge ncrab data with haul data 
 crabdata <- merge(haul,ncrab, by = c('Year','Agent','Haul'),all=TRUE)
+#crabdata <- merge(haul.nbs,ncrab, by = c('Year','Agent','Haul'),all=TRUE)
+# put classes with no crab catch (thus NA) to NOCrab, and n= 0
+crabdata$class<-as.character(crabdata$class)
 crabdata$class[is.na(crabdata$class)] <- 'NOCrab'
+# Change NA to 0 
 crabdata$n[is.na(crabdata$n)] <- 0 
-#write.csv(crabdata.w,paste(data_dir,'crabdata_vast.csv',sep=''),row.names=T) 
-# calculate abundance 
 
-crabdata$estkm <- with(crabdata,n*Area_Nm2*(1.852^2)/Swept_km2)
+#write.csv(crabdata.w,paste(data_dir,'crabdata_vast.csv',sep=''),row.names=T) 
+
+# calculate abundance 
 crabdata$estnm <- with(crabdata,n*Area_Nm2/Swept_NM2)
 crabdata$cpuenm <- with(crabdata,n/Swept_NM2)
 # Remove data that does not have any Area_Nm info (out of ADFG survey area)
 crabdata <- crabdata[which(!is.na(crabdata$estnm)),]
-# Remove bad tow data (Keep retow data)
-crabdata.r <- crabdata[which(is.na(crabdata$Haul_rate)|crabdata$Haul_rate != 'd'),]
-# Remove retow data
-if(retow == FALSE){ 
-crabdata.r <- crabdata[which(is.na(crabdata$Haul_rate)),]
-}
+# Average out retow data (In case it exists)
+crabdata.est <- aggregate(estnm ~ Year+Agent+ADFG_Station+ADFG_tier+CPT_STD+class, FUN=mean, data=crabdata)
+crabdata.n <- aggregate(n ~ Year+Agent+ADFG_Station+ADFG_tier+CPT_STD+class, FUN=sum, data=crabdata)
+crabdata.nw <- dcast(crabdata.n, Year+ADFG_Station+ADFG_tier+CPT_STD+Agent~class,value.var='n')
 
-# Average out retow data 
-crabdata.est <- aggregate(estnm ~ Year+Agent+ADFG_Station+ADFG_tier+CPT_STD+class, FUN=mean, data=crabdata.r)
-crabdata.n <- aggregate(n ~ Year+Agent+ADFG_Station+ADFG_tier+CPT_STD+class, FUN=sum, data=crabdata.r)
-crabdata.nw <- dcast(crabdata.n, Year+ADFG_Station+ADFG_tier+CPT_STD+Agent~class)
-write.csv(crabdata.nw,'ADFG_NBS_crab_n.csv')
-crabdata.cpue <- aggregate(cpuenm ~ Year+Agent+ADFG_Station+ADFG_tier+CPT_STD+class, FUN=mean, data=crabdata.r)
-ADFG_NBS <- crabdata.cpue[with(crabdata.cpue,(Year %in% c(2017,2019,2021,2023)) & (ADFG_Station %in% c(79,81,121,123,125,127,129,131,133,135,176,180,186))),]
-ADFG_NBS.w <- dcast(ADFG_NBS, Year+ADFG_Station+ADFG_tier+CPT_STD~class+Agent)
-write.csv(ADFG_NBS.w,'ADFG_NBS.csv')
+
+#write.csv(crabdata.nw,'ADFG_NBS_crab_n.csv')
+crabdata.cpue <- aggregate(cpuenm ~ Year+Agent+ADFG_Station+ADFG_tier+CPT_STD+class, FUN=mean, data=crabdata)
+#ADFG_NBS <- crabdata.cpue[with(crabdata.cpue,(Year %in% c(2017,2019,2021,2023)) & (ADFG_Station %in% c(79,81,121,123,125,127,129,131,133,135,176,180,186))),]
+#ADFG_NBS.w <- dcast(ADFG_NBS, Year+ADFG_Station+ADFG_tier+CPT_STD~class+Agent)
+#write.csv(ADFG_NBS.w,'ADFG_NBS.csv')
 
 ############################################################################
 # 6.0  Remove resample and no ADF&G station data       
@@ -178,42 +203,25 @@ write.csv(ADFG_NBS.w,'ADFG_NBS.csv')
 ############################################################################
 # Remove unnecessary data 
 crabdata.est <- crabdata.est[,c('Year','Agent','ADFG_Station','ADFG_tier','CPT_STD','class','estnm')]
+crabdata.cpue <- crabdata.cpue[,c('Year','Agent','ADFG_Station','ADFG_tier','CPT_STD','class','cpuenm')]
 
 # Change data from long to wide format 
 crabdata.est.w <- dcast(crabdata.est, Year+Agent+ADFG_Station+ADFG_tier+CPT_STD~class)
-crabdata.est.w$Total[crabdata.est.w$NOCrab ==0] <- 0
-crabdata.est.w$Total<- ifelse(!is.na(crabdata.est.w$female)&is.na(crabdata.est.w$Total),
-                             crabdata.est.w$female,crabdata.est.w$Total)
-							 
+crabdata.est.w[is.na(crabdata.est.w)] <- 0
 
-crabdata.n.w <- dcast(crabdata.n, Year+Agent+ADFG_Station+ADFG_tier+CPT_STD~class)
+# Change data from long to wide format 
+crabdata.cpue.w <- dcast(crabdata.est, Year+Agent+ADFG_Station+ADFG_tier+CPT_STD~class)
+crabdata.cpue.w[is.na(crabdata.cpue.w)] <- 0
+
+
 crabdata.cpue.w <- dcast(crabdata.r, Year+Agent+ADFG_Station+Haul+Month+Day+Latitude+Longitude+Swept_NM2+Depth_m+Bottom_Temp+Surface_Temp+ADFG_tier~class, value.var='cpuenm')
 
-write.csv(crabdata.cpue.w,'cpue.csv')
-temp <- aggregate(Total ~ Year+Agent+ADFG_Station,mean, data=crabdata.est.w)
-crabdata.est.w <- dcast(temp, ADFG_Station~Year+Agent,fun.aggregate = mean,value.var='Total')
-temp <- merge(station, crabdata.est.w,by='ADFG_Station')
-write.csv(temp,'VAST.csv')
+#write.csv(crabdata.cpue.w,'cpue.csv')
+#temp <- aggregate(Total ~ Year+Agent+ADFG_Station,mean, data=crabdata.est.w)
+#crabdata.est.w <- dcast(temp, ADFG_Station~Year+Agent,fun.aggregate = mean,value.var='Total')
+#temp <- merge(station, crabdata.est.w,by='ADFG_Station')
+#write.csv(temp,'VAST.csv')
  
-head(temp)
-
-
-# Add 0 to NA
-crabdata.est.w[is.na(crabdata.est.w)] <- 0
-crabdata.n.w[is.na(crabdata.n.w)] <- 0
-# Extract class name 
-if(unknown == FALSE){
-classes <- names(crabdata.est.w)[-c(1:5)]
-sclass <- classes[!classes %in% c('female','NOCrab','UNK')]
-unkadd <- (crabdata.est.w$UNK*crabdata.est.w[,sclass]/ifelse(rowSums(crabdata.est.w[,sclass])==0,1,rowSums(crabdata.est.w[,sclass])))
-head(crabdata.est.w)
-crabdata.est.w[,sclass] <- crabdata.est.w[,sclass]+unkadd
-}
-   
-
-#crabdata.est.w <- reshape(crabdata.est, timevar='class',idvar=c('Year','Agent','ADFG_Station','ADFG_tier','CPT_STD'),direction='wide' )
-
-#crabdata.est.w[with(crabdata.est.w,est.female+est.Total+est.other ==0),] 
 
 
 ############################################################################
@@ -229,6 +237,7 @@ crabn[order(crabn$Year,crabn$Agent,crabn$ADFG_tier),]
 by.tier <- aggregate(cbind(female,Legal,Pre1,Pre2,Pre3) ~ Year+Agent+ADFG_tier,FUN=sum,data=crabdata.est.w)
 by.tier[order(by.tier$Year,by.tier$Agent,by.tier$ADFG_tier),]
 }
+by.tier[by.tier$Year==2024,]
 
 ############################################################################
 # 9.0  CPT Estimates: Run this if class is CPT classification   
@@ -236,12 +245,11 @@ by.tier[order(by.tier$Year,by.tier$Agent,by.tier$ADFG_tier),]
 # limit data to CPT_STD area 
 if (classification == 'CPT'){
 # Limit data to standardized area 
-crabdata.est.c <- crabdata.est.w[crabdata.est.w$CPT_STD =='S',] 
+crabdata.est.c <- crabdata.est.w[which(crabdata.est.w$ADFG_tier %in% c('c','t1','t2','t3')),] 
 # Expand area to entier NS. 
 #crabdata.est.c <- crabdata.est.w[crabdata.est.w$ADFG_tier !='ONS',] 
-crabsum <- aggregate(Total ~ Year+Agent,data=crabdata.est.c,FUN = function(x) c(sum = sum(x),mean = mean(x),sd = sd(x),n = length(x)))
+crabsum <- aggregate(Total ~ Agent+Year,data=crabdata.est.c,FUN = function(x) c(sum = sum(x),mean = mean(x),sd = sd(x),n = length(x)))
 crabsum <- do.call(data.frame, crabsum)
- 
 crabsum$cv <- with(crabsum,sqrt(Total.n)*Total.sd/Total.sum)
 print(crabsum)
 crabsum.f <- aggregate(female ~ Year+Agent,data=crabdata.est.c,FUN = function(x) c(sum = sum(x),mean = mean(x),sd = sd(x),n = length(x)))

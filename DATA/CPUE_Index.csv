@@ -1,0 +1,125 @@
+"Spcode","me","Taxon.Confidence","ADFG","NBS","p.value"
+10,"Petromyzontidae",,0,0.245450338822071,1
+10120,"Hippoglossus stenolepis","High",60.3199775514022,71.195956575092,1
+10140,"Hippoglossoides robustus","Moderate",0,0.192694863108824,1
+10155,"Liopsetta glacialis (=Pleuronectes glacialis)","Low",0,0.813543925289461,1
+10210,"Limanda aspera","High",229.233729152544,549.860013124807,0.015625
+10211,"Limanda proboscidea (=Pleuronectes proboscidea)","High",6.46601815161874,133.947614522659,1
+10220,"Platichthys stellatus","High",613.932665835898,608.291700252907,0.25
+10260,"Lepidopsetta sp. (= Pleuronectes in part)",,24.0925607841137,0,1
+10285,"Pleuronectes quadrituberculatus","High",87.2657286805748,112.926625838254,0.4609375
+20001,"Pallasi barbata","High",0,0.0712648574262583,0.5
+20041,"Podothecus veternus","High",1.01861929785775,0.65530865833527,1
+20061,"Occella dodecaedron","High",3.58731144028163,3.77040417032935,0.875
+20322,"Arhichas orientalis","High",0,33.9624696229302,1
+21110,"Clupea pallasi  (=Clupea harengus pallasi)","High",10.8576353541631,5.53591838262424,0.75
+21300,"Cottidae","High",4.60593073813937,0,1
+21313,"Gymnocanthus sp.","Moderate",23.1712932682018,0.64552779141456,0.0625
+21314,"Gymnocanthus pistilliger","Moderate",0,17.8501186679915,0.25
+21315,"Gymnocanthus tricuspis","Moderate",0,10.7196376038141,1
+21370,"Myoxocephalus polyacanthocephalus","High",0,6.69783627854903,1
+21371,"Myoxocephalus jaok","High",0,75.4292996070932,0.0078125
+21375,"Myoxocephalus sp.","High",44.2407131341819,0,0.015625
+21376,"Megalocottus platycephalus","Low",0,2.21599092575148,1
+21388,"Enophrys diceraus  (=Enophrys claviger)","High",1.84283720780403,7.01285753015754,0.125
+21405,"utichthys pribilovius","High",0,0.26907902071707,0.5
+21423,"Eurymen gyrinus","High",0,1.87352476776808,0.5
+21720,"Gadus macrocephalus","High",1.86008741347936,0,1
+21725,"Boreogadus saida","Moderate",0,0.897727522110152,0.125
+21735,"Eleginus gracilis","High",130.653835159163,477.674100856029,0.0078125
+21740,"Theragra chalcogramma","High",68.3072195875917,23.2096253630559,0.625
+21753,"Pungitius pungitius","High",0,0.0481832057301118,1
+21932,"Hexagrammos stelleri","High",1.44673465492839,2.34471064484643,0.75
+22201,"Liparis sp.","High",0,0.230911416490523,1
+22205,"Liparis gibbus (=Liparis cyclostigma)","High",0,1.30727600975486,1
+22208,"Liparis pulchellus",,0,0.642258273285524,1
+22254,"Liparis bathyarcticus",,0,6.04987911205171,1
+23041,"Mallotus villosus","High",0.35430236447226,0.114688977372415,1
+23055,"Osmerus mordax","High",0,14.5065376944596,0.125
+23801,"Lumpenus sp.",,32.6587536131541,0,0.03125
+23804,"Stichaeus punctatus","Moderate",2.31109885000102,1.76724243951891,1
+23807,"Lumpenus fabricii","Moderate",0,112.766077432674,0.03125
+23808,"Lumpenus sagitta","Moderate",0,5.06507766871065,0.5
+23809,"Acantholumpenus mackayi","Moderate",0,44.815657095025,0.03125
+23843,"Chirolophis snyderi","Low",0,0.3436304743509,1
+24180,"Lycodes sp.","High",6.185643396193,0,1
+24185,"Lycodes palearis","High",0,6.87735877212763,0.125
+24186,"Lycodes mucosus","Low",0,1.37626772846898,1
+24189,"Lycodes turneri","Low",0,5.16593725678427,0.125
+40049,"Sertulariidae",,0,14.9849769820648,1
+40500,"Scyphozoa (class)","High",19.547727351228,4.68156498711122,0.15625
+40504,"Chrysaora melaster","High",0,0.895064109241459,1
+40519,"Staurostoma mertensii",,0,0.183502363795864,1
+40561,"Cyanea capillata","High",0,8.69383376474411,0.25
+41201,"Gersemia sp.  (=Eunephthya sp.)","High",109.226396900279,180.57661878601,0.8125
+43000,"Actiniaria (order)","High",52.1755728678703,48.5260854821003,0.296875
+43010,"Metridium sp.","High",0,199.518481450817,0.03125
+43040,"Tealia sp.","Low",0,28.5188397401059,1
+43042,"Urtici crassicornis","Low",0,52.977434700258,1
+43082,"Cribrinopsis ferldi","Low",0,76.776865983544,1
+45000,"Ctenophora (phylum)",,0,0.045875590948966,1
+50301,"Arctonoe vittata",,0.129464474804664,0,0.5
+54030,"Cheilonereis cyclurus",,0.0442877955590324,0,1
+56300,"Polynoidae",,0.107320577025148,0,0.5
+56311,"Eunoe nodosa","Moderate",0.584835791735229,1.60156346081402,0.853923299287067
+56312,"Eunoe depressa","Moderate",0.0221438977795162,0.674432020880884,1
+60100,"Amphipoda","High",0.068904576434455,1.06361813489564,1
+62000,"Isopoda (order)","High",0.0442877955590324,0,1
+63000,"Cumacea",,0,3.19085440468693,1
+63500,"Euphausiacea (order)",,0.0442877955590324,0,1
+65100,"Thoracica (order)","High",10.999119566399,41.6117476265675,0.625
+65203,"Balanus evermanni","Low",5.75741342267422,0,1
+66045,"Pandalus goniurus","Moderate",28.0409477620106,6.62651980168113,0.09375
+66050,"Pandalus hypsinotus","Moderate",0.35430236447226,0,1
+66502,"Crangon sp.","Moderate",9.37062446686869,66.4421956123937,0.109375
+66530,"Crangon dalli",,8.03058763475549,0,0.0625
+66548,"Crangon septemspinosa","Moderate",30.249706731874,0,0.0625
+66570,"Argis sp.","Moderate",15.4973143467856,24.2851946582837,0.1484375
+66601,"Sclerocrangon boreas","Low",11.1703111083383,22.3322293897402,0.5
+68580,"Chionoecetes opilio","High",0,1.24692164904883,1
+68781,"Telmessus cheiragonus","High",110.617864000559,148.115985219632,0.546875
+69061,"Labidochirus splendescens (=Pagurus splendescens)","High",4.41751739777924,41.1304703849039,0.0234375
+69086,"Pagurus trigonocheirus","High",21.9879555982539,172.504012782129,0.5
+69090,"Pagurus ochotensis","High",27.2751111161798,61.1278835541273,0.1875
+69120,"Pagurus capillatus","High",190.063749364543,149.192607878406,0.9375
+69316,"Hapalogaster grebnitzkii","High",0,7.71292845755365,1
+69322,"Paralithodes camtschaticus","High",94.3625297377785,37.6382758842434,0.5625
+71001,"Gastropod sp. Eggs","High",15.6688689364947,7.47196875035474,0.84375
+71010,"Nudibranchia","High",0.385183141666837,0,1
+71250,"Nudibranchia","Low",62.6964104253124,0,1
+71500,"Gastropod unident.","High",0.385183141666837,0,1
+71511,"ticidae egg","High",3.70374142555469,0,0.25
+71583,"Lamellariidae",,0,43.4526916310398,1
+71634,"Tachyrhynchus erosus",,0,3.19085440468693,1
+71639,"Calyptraeidae",,0.0885755911180649,0,1
+71753,"Pyrulofusus deformis","High",51.7989990732582,0,0.5
+71772,"Beringius beringii","Low",26.6966467937611,7.22748085951677,0.5
+71882,"Neptunea ventricosa","Low",84.3710239972985,11.3110514217963,0.5
+71884,"Neptunea heros","Low",391.770125628649,404.347548202344,1
+74080,"Mytilus edulis",,38.9822240986398,0,1
+74311,"Hiatella arctica","Low",0.792961517656931,0,0.03125
+74980,"Clinocardium sp.","Low",0,3.19085440468693,1
+75284,"Serripes sp.","High",69.7604030670237,0,0.5
+75287,"Serripes notabilis","Moderate",0,211.136381454746,1
+80020,"Evasterias echinosoma","Moderate",184.250624026031,261.613979732128,0.4609375
+80200,"Lethasterias nimensis","High",107.506195420421,82.6892416261402,0.4609375
+80540,"Henricia sp.","High",0,3.32808891331843,0.5
+80590,"Leptasterias polaris","High",0,0.53001526303123,1
+80595,"Leptasterias sp.","High",3.64931435406427,1.53360772165862,0.625
+81095,"Crossaster papposus","High",0,2.50503322041471,1
+81742,"Asterias amurensis","High",2671.30266919554,3439.2112785828,0.1484375
+82510,"Strongylocentrotus droebachiensis","Low",165.953502183771,539.509983836706,0.21875
+82511,"Strongylocentrotus","Moderate",0,433.858762117442,1
+83000,"Ophiuroid unident.","High",192.591570833418,0,1
+83020,"Gorgonocephalus caryi","High",0,3.24299757532099,0.5
+83320,"Ophiura sarsi","Low",0,707.019700976977,1
+91000,"Porifera","High",7.79171884353602,8.3239350959816,1
+95000,"Bryozoa (phylum)","Moderate",0,64.3656811479015,1
+95020,"Eucratea loricata","Low",7.96279153571144,0,0.03125
+95030,"Flustra serrulata","Low",0.0885755911180649,0,1
+95039,"Alcyonidium disciforme",,0,62.8860732857088,0.25
+98082,"Styela rustica","High",4.17157369060395,0,0.25
+98105,"Boltenia ovifera","High",1.94911120493199,0,1
+98300,"Ascidiacea",,0,500.268383412988,1
+98310,"Aplidium sp.","High",145.041829094805,0,0.0625
+98312,"Aplidium sp.",,0,114.075358960424,1

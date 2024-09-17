@@ -53,40 +53,44 @@ source_dir <- file.path(main_dir,'PROGRAM','R-code')
 #-------------------------------------------------------------------------------
 #  0.2 Define crab data   
 #-------------------------------------------------------------------------------
-# Data file name:  Keep in the data directory
-data_file1 <- 'ADFG_Crab.csv'
-data_file2 <- 'NOAA_Crab.csv'
-data_file3 <- 'NOAA_RKC_NBS.csv'
 # standard output
 st <- c('Year', 'Agent','Haul','Sex', 'Size_mm','Shell','Clutch', 'full','Egg.condition', 'Egg.color','Sampling.Factor')
 
-#-------------------------------------------------------------------------------
+#===============================================================================
 # 1.0  Read ADFG Crab data  
-#-------------------------------------------------------------------------------
-# Data file name:  Keep in the data directory
-adfg <-read.csv(file.path(data_dir,'ADFG',data_file1),header=TRUE)
+#===============================================================================
+# Find the file names of ADFG Crab data in the Crab folder
+crab.file.list <- list.files(file.path(data_dir,'ADFG','Crab'))
+# n: number of filses 
+n <- length(crab.file.list)
+# read each file and combine to make a single ADFG.haul data 
+ADFG.crab <- data.frame()
+for(i in 1:n){
+ temp <- read.csv(file.path(data_dir,'ADFG','Crab',crab.file.list[i]), skip = 6, na='',header=TRUE)
+ ADFG.crab <- rbind(ADFG.crab,temp)
+}
+# Change format (Station is numeric)
+
 # Add Sampling factor  
-adfg$Sampling.Factor <- 1
-# Add Agent 
-adfg$Agent <- 'ADFG'
+ADFG.crab$Sampling.Factor <- 1
 # Assign clutch fullness % 
-adfg$full <- with(adfg,ifelse(Clutch <= 2,0,
+ADFG.crab$full <- with(ADFG.crab,ifelse(Clutch <= 2,0,
 	ifelse(Clutch ==3, 15, 
     ifelse(Clutch ==4, 45,
     ifelse(Clutch ==5, 75, 95)))))
 # Change Juvenile clutch size to  0 
-adfg[which(adfg$JM=='J'),'Clutch'] <- 0
+ADFG.crab[which(ADFG.crab$JM=='J'),'Clutch'] <- 0
+ADFG.crab$Agent <- 'ADFG'
 # limit data 
-adfg <- adfg[,st]
+ADFG.crab <- ADFG.crab[,st]
 
-#-------------------------------------------------------------------------------
+
+#===============================================================================
 # 2.0  Read NOAA Crab data  
-#-------------------------------------------------------------------------------
+#===============================================================================
 # Data file name:  Keep in the data directory
-noaa <- read.csv(file.path(data_dir,'NMFS_76_91',data_file2),header=TRUE)
-# Remove unnecessary data 
-noaa$Agent <- 'NOAA'
-# Change cluch 9 to NA
+noaa <- read.csv(file.path(data_dir,'NMFS_76_91','NMFS_1976_1991_Crab.csv'),skip=6,header=TRUE)
+# 1: sublegal or female, 2: Legal
 noaa[which(noaa$Clutch == 9),'Clutch'] <- NA
 noaa$full <- with(noaa,ifelse(Clutch <= 1,0,
 	ifelse(Clutch ==2, 6.25, 
@@ -94,29 +98,42 @@ noaa$full <- with(noaa,ifelse(Clutch <= 1,0,
     ifelse(Clutch ==4, 27.5,
     ifelse(Clutch ==5, 62.5,
 	ifelse(Clutch ==6, 87.5,100)))))))
+noaa$Agent <- 'NOAA'
+# Remove unnecessary data 
 noaa <- noaa[,st]
 
-#-------------------------------------------------------------------------------
+#===============================================================================
 # 3.0  Read NOAA NBS Crab data  
-#-------------------------------------------------------------------------------
-# Data file name:  Keep in the data directory
-noaanbs <- read.csv(file.path(data_dir,'NOAA_NBS',data_file3),header=TRUE)
-# Remove unnecessary data 
-noaanbs$Agent <- 'NOAA'
+#===============================================================================
+# Find the file names of ADFG Crab data in the Crab folder
+crab.file.list <- list.files(file.path(data_dir,'NOAA_NBS','Crab'))
+# n: number of filses 
+n <- length(crab.file.list)
+# read each file and combine to make a single ADFG.haul data 
+NBS.crab <- data.frame()
+for(i in 1:n){
+ temp <- read.csv(file.path(data_dir,'NOAA_NBS','Crab',crab.file.list[i]), skip = 6, na='',header=TRUE)
+NBS.crab <- rbind(NBS.crab,temp)
+}
+# Change format (Station is numeric)
+
+NBS.crab$Agent <- 'NOAA'
 # Change cluch 9 to NA
-noaanbs[which(noaanbs$Clutch == 9),'Clutch'] <- NA
-noaanbs$full <- with(noaanbs,ifelse(Clutch <= 1,0,
+NBS.crab[which(NBS.crab$Clutch == 9),'Clutch'] <- NA
+NBS.crab$full <- with(NBS.crab,ifelse(Clutch <= 1,0,
 	ifelse(Clutch ==2, 6.25, 
     ifelse(Clutch ==3, 18.75,
     ifelse(Clutch ==4, 27.5,
     ifelse(Clutch ==5, 62.5,
 	ifelse(Clutch ==6, 87.5,100)))))))
-noaanbs <- noaanbs[,st]
+NBS.crab <- NBS.crab[,st]
 
-#-------------------------------------------------------------------------------
-# 4.0  Combine all Crab data and clean 
-#-------------------------------------------------------------------------------
-crabs <- rbind(noaa,adfg,noaanbs)
+#===============================================================================
+# 4.0  Create Data for Abundance Analyses   
+#===============================================================================
+# Combine all data 
+crabs <- rbind(noaa,ADFG.crab,NBS.crab)
+
 # Assign length class 
 crabs$lenclass <- lenclass(crabs$Size_mm, min.s,inc.s)
 # Change Sehll to NewShell (1) and OldShell (2)
